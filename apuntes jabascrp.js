@@ -23,7 +23,7 @@ undefined       //valor infedinido
 NaN             //no es un numero / Not a Number
 
 
-                ///     operaciones ///
+                ///    operaciones ///
           // aritmetica (MATEMATICAS)
         +       //SUMA
         -       //RESTA
