@@ -61,7 +61,5 @@ NaN             //no es un numero / Not a Number
 
 
 // funciones
-            function test(){
-                
-            }
+     //       function test(){}
 
