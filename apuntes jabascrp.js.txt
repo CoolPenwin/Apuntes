@@ -15,7 +15,7 @@ LET         // variable modoficable
                          // }
 
                 /// TERMINAL ///
-console.log   // imprime en la Terminal *util para inspeccionar codigo
+console.log   // imprime en la Terminal *util para inspeccionar codigo 
 
                 //fallos
 null            //valor nulo 
@@ -46,6 +46,15 @@ NaN             //no es un numero / Not a Number
          // código a ejecutar si la condición es falsa
         }
 
+
+        
+        if (condition1) {
+          // código a ejecutar si la condition1 es verdadera
+      } else if (condition2) {
+          // código a ejecutar si la condition2 es verdadera
+      } else {
+          // código a ejecutar si ninguna de las condiciones anteriores es verdadera
+      }
 
                     /// logica
         &&  //AND   /Y
