@@ -1,0 +1,27 @@
+donde estoy? 
+        pwd
+quie soy Usuario
+        howami
+
+Listar que hay
+        ls
+        ls -l    + permisos
+        ls -a    + ocultos
+        ll       + ocultos 
+        ls -la   + permisos + ocultos
+
+        ls -R    Recursivamente dentro de carpetas
+        tree
+
+Navegar entra carpetas 
+        cd 
+        cd .
+        cd ..
+        cd ../../
+
+
+
+Limpiar terminal 
+        clear
+        [Control] + l
+        cls    
