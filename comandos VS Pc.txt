@@ -1,0 +1,24 @@
+Copiar 
+    Control + C
+Pegar 
+    Control + V
+Cortar 
+    Control + X
+Deshacer
+    Control + Z
+
+Busqueda      Find = encontrar
+    Control + F 
+              
+
+agrupar codigo 
+    alt + Z
+
+Comentar     // comentario //
+   Control + ç   
+
+mover entre lineas algo seleccionoanado (alinea estructura por donde pasas)
+    Alt  +  (flechas del teclado  arriba o abajo)
+
+Clonar lineas
+    Alt + Shift + flecha abajo

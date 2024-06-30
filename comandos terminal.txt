@@ -38,5 +38,9 @@ Ver/LiStar que hay
 Crear directorio        
         mkdir nombre-nueva-carpeta
 
-copia
-        
+Crear archivo
+        touch nombre.extension
+
+copiar
+        cp archivo_original.js archivo_copia.js         crea una copia en el mismo sitio
+        cp archivo_original.js nueva_carpeta/           crea copia en un sitio dado 
