@@ -1,0 +1,19 @@
+git statuas 
+    ver cambios
+
+git diff archivo
+    ver detalles 
+
+git diff .
+    ver detalles todos los cambios
+
+git add .           
+    añade cambios (carpeta completa)no usar siempre
+
+git add archivo
+    añade cambios en ese repo
+
+    
+
+git push origin main 
+    subir commit con cambios

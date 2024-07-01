@@ -22,3 +22,8 @@ mover entre lineas algo seleccionoanado (alinea estructura por donde pasas)
 
 Clonar lineas
     Alt + Shift + flecha abajo
+
+
+
+
+    Commit         hacer uno por funcionalidad, fin de rato trabajado , final del dia
