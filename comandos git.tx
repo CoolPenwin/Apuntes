@@ -7,13 +7,16 @@ git diff archivo
 git diff .
     ver detalles todos los cambios
 
-git add .           
+git add .   caca no lo hagas  
     añade cambios (carpeta completa)no usar siempre
 
 git add archivo
-    añade cambios en ese repo
+    añade cambios al futuro commit uno a uno
 
-    
+
 
 git push origin main 
-    subir commit con cambios
+    subir commit con cambios a main
+
+git push origin master 
+    subir commit con cambios a master
