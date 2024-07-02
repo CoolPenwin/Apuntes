@@ -1,8 +1,10 @@
 PRO 
-        quien soy Usuario?
+        quien soy? Usuario
                 howami
+
         super Usuario (* ojo cuidao *)
                 sudo su
+                        superusuario-do superusuario
 ------------------------
 
 donde estoy? 
@@ -21,7 +23,7 @@ Ver/LiStar que hay
         ll       + ocultos 
         ls -la   + permisos + ocultos
 
-        ls -R    Recursivamente dentro de carpetas
+        ls -R    Recursivamente dentro de sub-carpetas
         tree    bonito arbol ordenado 
         ls ..   mira una capeta por encima
 
@@ -30,17 +32,109 @@ Ver/LiStar que hay
         ls .*   . representa el directorio actual
 
 (Cambio Directorio) Moverse/Navegar entre carpetas 
+        cd 
         cd nombre       [TAB] auto rellena
         cd              te manda a carpeta madre root 4 ~
         cd ..           ir 1 nivel arriba/atras
         cd ../../       ir 2 nivel arriba/atras
 
 Crear directorio        
+        mkdir 
         mkdir nombre-nueva-carpeta
 
 Crear archivo
+        touch 
         touch nombre.extension
 
 copiar
+        cp
         cp archivo_original.js archivo_copia.js         crea una copia en el mismo sitio
         cp archivo_original.js nueva_carpeta/           crea copia en un sitio dado 
+
+Abrir/Ver archivos en terminal
+        echo
+        echo nombre.txt
+                No abre archivos, redirige texto a cualquier 
+                Archivos de texto: .txt, .md, .yml, .json, .log, .sh, .csv, .xml, .html
+        
+        cat
+        cat nombre.txt
+                *Archivos de texto 
+
+        nano
+        nano nombre.txt
+                *Archivos de texto 
+                        Salir de nano
+                        [Control] + X
+        
+
+        code      (Visual Studio Code)
+        code ejemplo.config
+                *Archivos de texto +
+                código fuente: .py, .js, .java, .cpp, .c, .rb, .php, .go, .ts, .jsx, .tsx
+                configuración: .ini, .env, .config, .toml
+
+        vim
+        vim nombre.txt
+                *Archivos de texto +
+                 código fuente: .py, .js, .java, .cpp, .c, .rb, .php, .go
+
+                 
+WTF salid del puto VIM               
+Modo Normal: Primero, asegúrate de que estás en el modo normal. Puedes hacer esto presionando la tecla Esc varias veces. Esto te sacará de cualquier otro modo en el que puedas estar (como el modo de inserción).
+
+Comando para salir: Una vez que estés en el modo normal, 
+         :q  
+                Esto intentará salir de Vim. 
+                Si has hecho cambios y has guardado, 
+                Vim no te dejará salir y te mostrará un mensaje de advertencia.
+
+Salir sin guardar:
+         :q! 
+                El ! le dice a Vim que ignore cualquier cambio no guardado y salga de inmediato.
+
+Guardar y salir: 
+         :wq y [Enter]. Esto guardará los cambios y luego cerrará Vim.
+
+
+
+
+
+
+                ------ GIT ------
+
+ver cambios
+        git statuas 
+
+
+
+ver detalles 
+        git diff archivo
+
+ver detalles todos los cambios
+        git diff .
+
+deshacer cambios 
+        git restore <file>
+
+añade cambios (carpeta completa)no usar siempre
+        git add .   caca no lo hagas  
+
+añade cambios al futuro commit uno a uno
+        git add archivo
+
+
+subir commits 
+        git push 
+        git push origin (RAMA)
+                        main/master/nombre-rama  
+                master es = a main nombre antiguo
+
+git checkout 
+        cambio RAMA
+        si no existe lo Crea
+git checkout -
+        retrocede RAMA
+
+git fetch
+        traer todas las ramas
