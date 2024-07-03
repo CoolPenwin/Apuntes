@@ -1,4 +1,11 @@
 ----- buenas practicas  -----
+flujo trabajo 
+1
+2
+3
+4
+5 commit
+
 Buenas Prácticas para Guardar Cambios en Git
 1º 
 git add <archivos modificados>
@@ -114,6 +121,8 @@ git branch
 git checkout <rama>
     Función: Cambia a una rama diferente.
     Caso de Uso: Para cambiar el contexto de trabajo a una rama específica.
+git checkout -b <Nueva-rama>
+    Función: Crea bueva rama y te mueve a esa rama
 
 git merge <rama>
     Función: Fusiona una rama con la rama actual.
