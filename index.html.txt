@@ -1,14 +1,241 @@
  Invocar Estructura 
- 
- html:5
-
- Head
-1º boostrap 
-2º link estilo CSS
+    html:5
 
 
-/Head
-Body
-    
-/Body
-    Scripts .js
+Etiquetas estructurales:
+
+        <html>: Define el documento HTML.
+        <head>: Contiene metadatos sobre el documento.
+                    <title>: Define el título de la página que aparece en la pestaña del navegador.
+
+                    <meta>: Proporciona metadatos como la codificación de caracteres, la descripción de la página, palabras clave, etc.
+
+                                <meta charset="UTF-8">
+                                    Juego de caracteres:
+                                         Define el conjunto de caracteres utilizado en el documento.
+
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                    Vista en dispositivos móviles:
+                                         Configura la vista para que sea compatible con dispositivos móviles.
+
+                                <meta name="description" content="Una breve descripción de tu página">
+                                    Descripción:
+                                         Proporciona una breve descripción del contenido de la página, útil para motores de búsqueda.
+
+                                <meta name="keywords" content="HTML, CSS, JavaScript, tutorial">
+                                    Palabras clave:
+                                         Lista de palabras clave relevantes para el contenido de la página, también útil para motores de búsqueda.
+
+                                <meta name="author" content="Tu Nombre">
+                                    Autor:
+                                         Indica el autor del documento.
+
+                                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                                    Compatibilidad con IE:
+                                         Configura la compatibilidad con versiones específicas de Internet Explorer.
+
+                    <link>: Enlaza a recursos externos
+
+                                1º se pone antetes para que sean estilos base
+                                Enlace a Bootstrap (o cualquier otro framework CSS): Usando un CDN para incluir un framework CSS.
+                                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+                                2º se pone debajo para que tengan prioridad sobre boostrap
+                                Enlace a una hoja de estilos CSS: Para aplicar estilos personalizados a tu página.
+                                    <link rel="stylesheet" href="styles.css">
+
+                                Favicon: Para definir el icono de la página que aparece en la pestaña del navegador.
+                                    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+                                Fuente web: Para incluir fuentes personalizadas desde servicios como Google Fonts.
+                                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+                                Preconexión: Para mejorar el rendimiento al preconectar a un origen.
+                                    <link rel="preconnect" href="https://example.com">
+
+                                Pre-carga: Para cargar recursos críticos antes de que se necesiten.
+                                    <link rel="preload" href="styles.css" as="style">
+
+                                Manifesto: Para aplicaciones web progresivas (PWA).
+                                    <link rel="manifest" href="/manifest.json">
+
+                        
+                    <style>: Contiene estilos CSS internos.
+                    <script>: Enlaza o contiene scripts de JavaScript.
+                                Script interno: Se coloca directamente dentro de la etiqueta <script> en el documento HTML. Este método es útil para scripts pequeños o específicos de la página.
+                                    <head>
+                                    <script>
+                                        console.log('Hola, mundo!');
+                                    </script>
+                                    </head>
+
+                                Script externo: Se enlaza a un archivo JavaScript separado mediante la etiqueta <script>. Este método es preferible para mantener el código organizado y reutilizable.
+
+                                    <head>
+                                    <script src="scripts.js"></script>
+                                    </head>
+
+                                Script asíncrono: Se carga de manera asíncrona, lo que significa que no bloqueará la carga de la página mientras se descarga. Esto se hace añadiendo el atributo async.
+
+                                    <head>
+                                    <script src="scripts.js" async></script>
+                                    </head>
+
+                                Script diferido: Se carga después de que el documento HTML se haya analizado completamente, pero antes de que se dispare el evento DOMContentLoaded. Esto se hace añadiendo el atributo defer.
+
+                                    <head>
+                                    <script src="scripts.js" defer></script>
+                                    </head>
+
+                                Módulos de JavaScript: Se utilizan para importar y exportar funcionalidades entre diferentes archivos JavaScript. Esto se hace añadiendo el atributo type="module".
+
+                                    <head>
+                                    <script type="module">
+                                        import { miFuncion } from './miModulo.js';
+                                        miFuncion();
+                                    </script>
+                                    </head>
+
+                                Script en línea: Se coloca directamente dentro de una etiqueta HTML específica para ejecutar código JavaScript en respuesta a eventos.
+
+                                    <button onclick="alert('¡Hola!')">Haz clic aquí</button>
+
+        <body>: Contiene el contenido visible de la página web.
+                    Encabezados: <h1> a <h6> para títulos y subtítulos.
+                    Párrafos: <p> para bloques de texto.
+                    Enlaces: <a> para hipervínculos.
+                    Listas: <ul> para listas desordenadas y <ol> para listas ordenadas, con <li> para los elementos de la lista.
+                    Imágenes: <img> para insertar imágenes.
+                    Formularios: <form> para crear formularios, con elementos como <input>, <label>, y <button>.
+                    Divisiones y contenedores: <div> y <span> para agrupar y estilizar contenido.
+                    Tablas: <table>, <tr>, <td>, y <th> para estructurar datos en formato tabular.
+
+
+
+
+
+Etiquetas de texto:
+
+        <h1> a <h6>: Encabezados, donde <h1> es el más importante y <h6> el menos.
+        <p>: Párrafo.
+        <a>: Enlace.
+        <strong>: Texto en negrita.
+        <em>: Texto en cursiva.
+
+Etiquetas de lista:
+
+        <ul>: Lista desordenada.
+        <ol>: Lista ordenada.
+        <li>: Elemento de lista.
+
+Etiquetas de formulario:
+
+    <form>:     Define un formulario.
+
+        <input>: Campo de entrada.
+                Texto (text): Permite al usuario ingresar texto.
+                    <input type="text" name="nombre">
+
+                Contraseña (password): Permite al usuario ingresar una contraseña, ocultando los caracteres.
+                    <input type="password" name="password">
+
+                Correo electrónico (email): Permite al usuario ingresar una dirección de correo electrónico.
+                    <input type="email" name="email">
+
+                Número (number): Permite al usuario ingresar un número.
+                    <input type="number" name="edad">
+
+                Fecha (date): Permite al usuario seleccionar una fecha.    
+                    <input type="date" name="fecha">
+
+                Teléfono (tel): Permite al usuario ingresar un número de teléfono.
+                    <input type="tel" name="telefono">
+
+                URL (url): Permite al usuario ingresar una URL.
+                    <input type="url" name="website">
+
+                Casilla de verificación (checkbox): Permite al usuario seleccionar una o más opciones.
+                    <input type="checkbox" name="suscribir">
+
+                Botón de radio (radio): Permite al usuario seleccionar una opción de un grupo.
+
+                    <input type="radio" name="genero" value="femenino"> Femenino
+                    <input type="radio" name="genero" value="no-binario"> No binario
+                    <input type="radio" name="genero" value="masculino"> Masculino
+                    <input type="radio" name="genero" value="gato"> Gato
+
+                Lista desplegable (select): Permite al usuario seleccionar una opción de una lista.
+                    <select name="pais">
+                        <option value="mexico">México</option>
+                        <option value="espana">España</option>
+                        <option value="argentina">Argentina</option>
+                    </select>
+
+                Campo de archivo (file): Permite al usuario subir un archivo.
+                    <input type="file" name="archivo">
+
+                Área de texto (textarea): Permite al usuario ingresar texto en múltiples líneas.
+                    <textarea name="mensaje">   </textarea>
+                    
+                Rango (range): Permite al usuario seleccionar un valor dentro de un rango.
+                    <input type="range" name="volumen" min="0" max="100">
+                    
+                Color (color): Permite al usuario seleccionar un color.
+                    <input type="color" name="color">
+                    
+                Hora (time): Permite al usuario seleccionar una hora.
+                    <input type="time" name="hora">
+                    
+                Mes (month): Permite al usuario seleccionar un mes y un año.
+                    <input type="month" name="mes">
+                    
+                Semana (week): Permite al usuario seleccionar una semana y un año.
+                    <input type="week" name="semana">
+                    
+                Oculto (hidden): Permite enviar datos ocultos al servidor.
+                    <input type="hidden" name="usuario_id" value="12345">
+                    
+                Botón de envío (submit): Permite al usuario enviar el formulario.
+                    <input type="submit" value="Enviar">
+                    
+                Botón de reinicio (reset): Permite al usuario restablecer el formulario a sus valores predeterminados.
+                    <input type="reset" value="Restablecer">
+                    
+
+        <label>: Etiqueta para un campo de entrada.
+                Etiqueta con atributo for: Asocia la etiqueta con un elemento de formulario mediante el atributo for, que debe coincidir con el atributo id del elemento de formulario.
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+
+                Etiqueta envolvente: Envuelve el elemento de formulario dentro de la etiqueta <label>. Esto también asocia la etiqueta con el elemento de formulario.
+                    <label>Nombre:
+                      <input type="text" name="nombre">
+                    </label>
+
+                Etiqueta para casillas de verificación y botones de radio: Es común usar etiquetas para describir casillas de verificación y botones de radio.
+                    <label for="suscribir">Suscribirse:</label>
+                    <input type="checkbox" id="suscribir" name="suscribir">
+
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+
+                Etiqueta para listas desplegables: Describe el propósito de una lista desplegable.
+
+                 <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                    <option value="mexico">México</option>
+                    <option value="espana">España</option>
+                    <option value="argentina">Argentina</option>
+                 </select>
+
+                Etiqueta para áreas de texto: Describe el propósito de un área de texto.
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+
+
+
+        <button>: Botón.
+
