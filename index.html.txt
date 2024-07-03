@@ -2,6 +2,93 @@
     html:5
 
 
+Estructura Básica
+    <!DOCTYPE html>: Define el tipo de documento y la versión de HTML.
+    <html>: Contiene todo el contenido de la página web.
+    <head>: Contiene metadatos y enlaces a recursos externos.
+    <body>: Contiene el contenido visible de la página web.
+Encabezados y Texto
+    <h1> a <h6>: Encabezados, donde <h1> es el más importante y <h6> el menos importante.
+    <p>: Párrafo de texto.
+    <span>: Contenedor en línea para texto o elementos.
+    <strong>: Texto en negrita.
+    <em>: Texto en cursiva.
+Enlaces e Imágenes
+    <a>: Enlace a otra página o recurso.
+    <img>: Imagen.
+Listas
+    <ul>: Lista desordenada.
+    <ol>: Lista ordenada.
+    <li>: Elemento de lista.
+Tablas
+    <table>: Tabla.
+    <tr>: Fila de tabla.
+    <td>: Celda de tabla.
+    <th>: Encabezado de celda de tabla.
+Formularios
+    <form>: Formulario.
+        <input>: Campo de entrada.
+        <textarea>: Área de texto.
+        <button>: Botón.
+        <select>: Menú desplegable.
+        <option>: Opción dentro de un menú desplegable.
+Estructura y Diseño
+    <div>: Contenedor de bloque.
+    <header>: Encabezado de una sección o página.
+    <footer>: Pie de página de una sección o página.
+    <section>: Sección de contenido.
+    <article>: Artículo independiente.
+    <nav>: Navegación.
+
+
+
+
+
+Atributos
+
+Los atributos en HTML son características adicionales que puedes agregar a las etiquetas para proporcionar información adicional sobre los elementos. Vamos a explorar algunos de los tipos más comunes de atributos y su propósito:
+
+1. Atributos Globales
+    Estos atributos pueden ser utilizados en cualquier elemento HTML.
+
+        class: Define una o más clases para un elemento. Las clases se utilizan para aplicar estilos CSS o para seleccionar elementos con JavaScript.
+            <div class="mi-clase"></div>
+
+        id: Define un identificador único para un elemento. Los identificadores se utilizan para seleccionar elementos con CSS o JavaScript.
+            <div id="mi-id"></div>
+        style: Aplica estilos CSS directamente al elemento.
+            <div style="color: red;"></div>
+
+        title: Proporciona información adicional sobre el elemento, que a menudo se muestra como un tooltip cuando el usuario pasa el cursor sobre el elemento.
+            <div title="Información adicional"></div>
+
+2. Atributos Específicos de Etiquetas
+    Estos atributos son específicos de ciertas etiquetas HTML.
+
+        src: Especifica la URL de un recurso externo, como una imagen o un script.
+            <img src="imagen.jpg" alt="Descripción de la imagen">
+
+        href: Especifica la URL de un enlace.
+            <a href="https://www.ejemplo.com">Visitar Ejemplo </a>
+
+        alt: Proporciona un texto alternativo para una imagen, que se muestra si la imagen no se puede cargar.
+            <img src="imagen.jpg" alt="Descripción de la imagen">
+
+        type: Define el tipo de elemento, como el tipo de entrada en un formulario.
+            <input type="text" name="nombre">
+
+3. Atributos de Eventos
+    Estos atributos permiten que los elementos respondan a eventos del usuario, como clics o movimientos del ratón.
+
+        onclick: Ejecuta JavaScript cuando se hace clic en el elemento.
+            <button onclick="alert('¡Hola!')">Haz clic aquí</button>
+            
+        onmouseover: Ejecuta JavaScript cuando el ratón se mueve sobre el elemento.
+            <div onmouseover="cambiarColor(this)">Pasa el ratón por aquí</div>
+
+
+
+
 Etiquetas estructurales:
 
         <html>: Define el documento HTML.
@@ -101,6 +188,11 @@ Etiquetas estructurales:
                                     <button onclick="alert('¡Hola!')">Haz clic aquí</button>
 
         <body>: Contiene el contenido visible de la página web.
+
+            Header: Podría contener el título del sitio, un logo, y una barra de navegación.
+            Main: Aquí iría el contenido principal de la página, como artículos, imágenes, formularios, etc.
+            Footer: Podría incluir información de contacto, enlaces a redes sociales, y derechos de autor.
+
                     Encabezados: <h1> a <h6> para títulos y subtítulos.
                     Párrafos: <p> para bloques de texto.
                     Enlaces: <a> para hipervínculos.
@@ -110,8 +202,19 @@ Etiquetas estructurales:
                     Divisiones y contenedores: <div> y <span> para agrupar y estilizar contenido.
                     Tablas: <table>, <tr>, <td>, y <th> para estructurar datos en formato tabular.
 
+Etiquetas de estilo y diseño:
 
+        <div>: División o sección de la página.
+        <span>: Contenedor en línea.
+        <style>: Define estilos CSS.
+            <div style="color: red;"></div>
 
+Etiquetas de tabla:
+
+        <table>: Tabla.
+        <tr>: Fila de tabla.
+        <td>: Celda de tabla.
+        <th>: Encabezado de celda.
 
 
 Etiquetas de texto:
@@ -128,9 +231,15 @@ Etiquetas de lista:
         <ol>: Lista ordenada.
         <li>: Elemento de lista.
 
+Etiquetas de imagen y multimedia:
+
+        <img>: Imagen.
+        <video>: Video.
+        <audio>: Audio.        
+
 Etiquetas de formulario:
 
-    <form>:     Define un formulario.
+    <form>: Define un formulario.
 
         <input>: Campo de entrada.
                 Texto (text): Permite al usuario ingresar texto.
@@ -223,18 +332,17 @@ Etiquetas de formulario:
 
                 Etiqueta para listas desplegables: Describe el propósito de una lista desplegable.
 
-                 <label for="pais">País:</label>
+                    <label for="pais">País:</label>
                     <select id="pais" name="pais">
-                    <option value="mexico">México</option>
-                    <option value="espana">España</option>
-                    <option value="argentina">Argentina</option>
-                 </select>
+                        <option value="mexico">México</option>
+                        <option value="espana">España</option>
+                        <option value="argentina">Argentina</option>
+                    </select>
 
                 Etiqueta para áreas de texto: Describe el propósito de un área de texto.
 
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje"></textarea>
-
 
 
         <button>: Botón.
