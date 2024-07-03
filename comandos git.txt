@@ -9,11 +9,9 @@ git status
 3º 
 git diff .
     Verificar Diferencias
-
-3*   Si has modificado un archivo y no quieres añadirlo al commit pero deseas conservar los cambios, usa:
+  2-3*   Si has modificado un archivo y no quieres añadirlo al commit pero deseas conservar los cambios, usa:
 git restore --staged <archivo>
     Esto quitará el archivo del índice (staging area) pero mantendrá los cambios en el área de trabajo.
-
 4º 
 git commit -m "mensaje descriptivo"
     Confirmar los Cambios (Commit)
