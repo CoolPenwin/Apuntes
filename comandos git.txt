@@ -9,6 +9,11 @@ git status
 3º 
 git diff .
     Verificar Diferencias
+
+3*   Si has modificado un archivo y no quieres añadirlo al commit pero deseas conservar los cambios, usa:
+git restore --staged <archivo>
+    Esto quitará el archivo del índice (staging area) pero mantendrá los cambios en el área de trabajo.
+
 4º 
 git commit -m "mensaje descriptivo"
     Confirmar los Cambios (Commit)
@@ -16,9 +21,10 @@ git commit -m "mensaje descriptivo"
    Sincronizar con el Repositorio Remoto
 git pull origin main
     Primero, asegúrate de que tu rama local esté actualizada con la rama remota
-    
+6º    
 git push origin main
     Luego, envía tus commits locales al repositorio remoto
+
 
 
 ----- Comandos Básicos -----
@@ -74,6 +80,33 @@ git diff .
         Antes de hacer un commit: Para ver las diferencias entre los archivos modificados y la última versión confirmada.
         Entre ramas: Para comparar las diferencias entre dos ramas diferentes.
         Entre commits específicos: Para ver las diferencias entre dos commits específicos en el historial.
+
+---Uso Básico de git restore -----
+Restaurar Archivos en el Área de Trabajo
+    Si has hecho cambios en un archivo y quieres deshacer esos cambios, puedes usar:
+git restore <archivo>
+    Esto revertirá el archivo a su estado en el último commit.
+
+Restaurar Archivos en el Índice (Staging Area)
+    Si has añadido un archivo al índice (staging area) y quieres deshacer esa acción, puedes usar:
+git restore --staged <archivo>
+    Esto moverá el archivo del índice de vuelta al área de trabajo sin deshacer los cambios en el archivo.
+
+Ejemplos Prácticos
+        Deshacer Cambios en un Archivo Específico
+    git restore mi_archivo.txt
+        Esto revertirá mi_archivo.txt a su estado en el último commit.
+
+        Deshacer Cambios en Todos los Archivos
+    git restore .
+        Esto revertirá todos los archivos modificados a su estado en el último commit.
+
+        Deshacer la Adición de un Archivo al Índice
+    git restore --staged mi_archivo.txt
+        Esto quitará mi_archivo.txt del índice, pero mantendrá los cambios en el área de trabajo.
+
+---
+
 
 
 git branch
