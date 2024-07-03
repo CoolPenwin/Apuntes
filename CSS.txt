@@ -1,0 +1,128 @@
+Propiedades Básicas
+
+    Color y Fondo
+        color: Cambia el color del texto.
+        background-color: Cambia el color de fondo de un elemento.
+        background-image: Añade una imagen de fondo.
+
+    Texto y Fuentes
+        font-family: Define la familia de fuentes.
+        font-size: Define el tamaño de la fuente.
+        font-weight: Define el grosor de la fuente.
+        text-align: Alinea el texto (izquierda, derecha, centro, justificar).
+        text-decoration: Añade decoraciones al texto (subrayado, tachado).
+
+    Espaciado
+        margin: Define el espacio exterior de un elemento.
+        padding: Define el espacio interior de un elemento.
+        border: Define el borde de un elemento.
+
+    Dimensiones
+        width: Define el ancho de un elemento.
+        height: Define la altura de un elemento.
+        max-width y max-height: Define el ancho y alto máximo de un elemento.
+        min-width y min-height: Define el ancho y alto mínimo de un elemento.
+
+    Posicionamiento
+        position: Define el tipo de posicionamiento (static, relative, absolute, fixed, sticky).
+        top, right, bottom, left: Define la posición de un elemento.
+        z-index: Define el orden de apilamiento de elementos.
+
+ Técnicas Avanzadas
+    Flexbox
+        display: flex: Activa el modo de diseño flexible.
+        justify-content: Alinea los elementos hijos en el eje principal.
+        align-items: Alinea los elementos hijos en el eje transversal.
+
+    Grid
+        display: grid: Activa el modo de diseño de cuadrícula.
+        grid-template-columns y grid-template-rows: Define las columnas y filas de la cuadrícula.
+        gap: Define el espacio entre los elementos de la cuadrícula.
+
+    Transiciones y Animaciones
+        transition: Define las transiciones suaves entre los estados de un elemento.
+        animation: Define las animaciones de un elemento.
+
+Propiedades Avanzadas
+
+    Transformaciones
+        transform
+        Aplica transformaciones 2D o 3D a un elemento, como rotar, escalar, trasladar, etc.
+            
+            .rotate {
+                transform: rotate(45deg);
+           }
+
+    Filtros
+        filter: 
+            Aplica efectos gráficos como desenfoque, brillo, contraste, etc.
+            
+            .blur {
+                filter: blur(5px);
+            }
+
+    Sombras
+        box-shadow
+            Añade sombras a los elementos.
+        text-shadow 
+            Añade sombras al texto.
+
+            .shadow {
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            }
+    Variables CSS
+
+        --variable-name
+            Define variables CSS para reutilizar valores.
+            
+            :root {
+                --main-color: #ff6347;
+            }
+            .element {
+               color: var(--main-color);
+            }
+
+    Pseudo-elementos
+        ::before y ::after 
+            Añade contenido antes o después de un elemento.  
+
+            .quote::before {
+                content: "“";
+            }
+            .quote::after {
+                content: "”";
+            }
+
+
+
+
+
+
+/* Selector de etiqueta */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Selector de clase */
+.titulo-principal {
+    color: #333;
+    text-align: center;
+}
+
+/* Selector de ID */
+#parrafo1 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Selector de atributo */
+a[target="_blank"] {
+    color: blue;
+    text-decoration: none;
+}
+
+/* Selector de pseudo-clase */
+a:hover {
+    text-decoration: underline;
+}
