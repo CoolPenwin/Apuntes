@@ -1,6 +1,9 @@
  Invocar Estructura 
     html:5
 
+index.html
+    es el archivo que se encuentra por defecto en una web 
+
 
 Estructura Básica
     <!DOCTYPE html>: Define el tipo de documento y la versión de HTML.
