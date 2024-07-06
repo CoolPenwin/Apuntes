@@ -75,6 +75,8 @@ git pull
 
 
 ----- Comandos Avanzados -----
+curl parrot.live
+
 
 git diff
     Función: Muestra las diferencias entre varios estados del repositorio.

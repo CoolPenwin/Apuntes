@@ -5,6 +5,8 @@ PRO
         super Usuario (* ojo cuidao *)
                 sudo su
                         superusuario-do superusuario
+        
+        curl parrot.live
 ------------------------
 
 donde estoy? 

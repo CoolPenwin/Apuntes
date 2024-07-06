@@ -8,10 +8,10 @@ VAR         // variable global  *obsoleta
 CONST       // "variable" NO MODIFICABLE
 LET         // variable modoficable
             //tipos de variables{
-        String "hola",'mundo'//texto 
-        Boolean             // verdadero o falso /binario 1 o 0
-        Number             // ovbio mumeros 23 
-        Number float:0.23 // coma flotante / numero 
+        String "hola",'mundo'   //texto  TAMBIEN LLAMADO CADENA (POR ESO LA SUMA DE PALABRAS ES CONCATENADO)
+        Boolean                 // verdadero o falso /binario 1 o 0
+        Number              // ovbio mumeros 23 
+        Number float:0.23   // coma flotante / numero 
                          // }
 
                 /// TERMINAL ///
@@ -72,3 +72,10 @@ NaN             //no es un numero / Not a Number
 // funciones
      //       function test(){}
 
+
+
+
+let age = prompt('What is your age?');
+
+// Your code below:
+console.log(parseInt(age) + 10); /// cambia de string a numero y suma lueeeh
