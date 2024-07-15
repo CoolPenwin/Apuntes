@@ -79,3 +79,8 @@ let age = prompt('What is your age?');
 
 // Your code below:
 console.log(parseInt(age) + 10); /// cambia de string a numero y suma lueeeh
+
+
+math.randoma()        leatorio de 0 a 0.9999999999
+math.floor()          recorta los decimales  y redondea abajo 
+math.ceil()           redondea a lo bruto hacia arriba
