@@ -1,10 +1,5 @@
 ----- buenas practicas  -----
-flujo trabajo 
-1
-2
-3
-4
-5 commit
+Commit  hacer uno por funcionalidad, fin de rato trabajado , final del dia
 
 Buenas Prácticas para Guardar Cambios en Git
 1º 
@@ -16,7 +11,7 @@ git status
 3º 
 git diff .
     Verificar Diferencias
-  2-3*   Si has modificado un archivo y no quieres añadirlo al commit pero deseas conservar los cambios, usa:
+*   Si has modificado un archivo y no quieres añadirlo al commit pero deseas conservar los cambios, usa:
 git restore --staged <archivo>
     Esto quitará el archivo del índice (staging area) pero mantendrá los cambios en el área de trabajo.
 4º 
@@ -117,6 +112,7 @@ git pull
 
 
 ----- Comandos Avanzados -----
+
 curl parrot.live
 
 
