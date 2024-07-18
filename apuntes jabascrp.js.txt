@@ -1,11 +1,15 @@
 Variables y tipos de datos:
  JavaScript tiene varios tipos de datos como string, number, boolean, null, undefined y object. Las variables se pueden declarar usando var, let o const.
 
+        VARIABLE GLOBAL     
     var: Tiene alcance global o local para una función, independientemente de su bloque de declaración.
 
-    let: Permite declarar variables limitando su alcance al bloque, declaración, o expresión donde se está usando. A diferencia de var, let no se inicializa con un valor undefined cuando se declara.
+        VARIABLES DE BLOQUE
+    let: Permite declarar variables limitando su alcance al bloque, declaración, o expresión donde se está usando.
+        A diferencia de var, let no se inicializa con un valor undefined cuando se declara.
 
-    const: Declarar una constante, es decir, una variable cuyo valor no puede ser cambiado una vez que se ha asignado. Al igual que let, el alcance de una constante es el bloque en el que se declara.
+    const: Es una variable cuyo valor no puede ser cambiado una vez que se ha asignado. 
+        Al igual que let, el alcance de una constante es el bloque en el que se declara.
 
 
             Number: Representa números. Pueden ser enteros o decimales. 
@@ -53,15 +57,244 @@ Operadores:
 Estructuras de control:
  Las estructuras de control en JavaScript incluyen declaraciones condicionales (if, else if, else, switch) y bucles (for, while, do while).
 
+    Secuenciales: Las instrucciones se ejecutan en orden secuencial, de arriba hacia abajo, una tras otra.
+            ejemplo
+                // Declaración de variables
+                let nombre = "Juan";
+                let edad = 30;
+                let ciudad = "Miami";
+
+                // Mostrar información en la consola
+                console.log("Bienvenido, " + nombre + "!");
+                console.log("Tienes " + edad + " años y vives en " + ciudad + ".");
+
+    Selectivas: Permiten tomar decisiones basadas en condiciones. Los condicionales como if, else if, else 
+
+        If :
+            La declaración if se utiliza para ejecutar un bloque de código si una condición especificada es verdadera.
+                Sintaxis:
+
+                if (condición) {
+                    // Código a ejecutar si la condición es verdadera
+                }
+
+        Else If :
+            La declaración else if se utiliza para especificar una nueva condición si la condición anterior es falsa.
+                Sintaxis:
+
+                if (condición1) {
+                    // Código a ejecutar si la condición1 es verdadera
+                } else if (condición2) {
+                    // Código a ejecutar si la condición2 es verdadera
+                }
+        
+        Else :
+            La declaración else se utiliza para ejecutar un bloque de código si ninguna de las condiciones anteriores es verdadera.
+                Sintaxis:
+                if (condición) {
+                    // Código a ejecutar si la condición es verdadera
+                } else {
+                    // Código a ejecutar si la condición es falsa
+                }
+
+        Switch :
+            La declaración switch se utiliza para seleccionar uno de varios bloques de código a ejecutar.
+                Sintaxis:
+
+                switch (expresión) {
+                        case valor1:
+                            // Código a ejecutar si la expresión coincide con valor1
+                            break;
+                        case valor2:
+                            // Código a ejecutar si la expresión coincide con valor2
+                            break;
+                        default:
+                            // Código a ejecutar si la expresión no coincide con ningún caso
+                    }
+                Ejemplo:
+                    let dia = "Lunes";
+                    switch (dia) {
+                        case "Lunes":
+                            console.log("Hoy es lunes");
+                            break;
+                        case "Martes":
+                            console.log("Hoy es martes");
+                            break;
+                        default:
+                            console.log("Hoy no es ni lunes ni martes");
+                    }
+
+
+    Iterativas: Permiten repetir un bloque de código múltiples veces. Los bucles como for, while, do-while 
+
+        For Loop:
+            El bucle for se utiliza cuando se conoce de antemano cuántas veces se debe repetir un bloque de código.
+                Sintaxis:
+                for (inicio; condición; incremento) {
+                    // Código a repetir
+                }
+
+
+        While Loop:
+
+            El bucle while se utiliza cuando no se sabe cuántas veces se debe repetir un bloque de código, pero se conoce la condición de finalización.
+            Sintaxis:
+            while (condición) {
+                // Código a repetir
+            }
+
 Funciones:
  Las funciones son bloques de código reutilizables que se pueden definir con la palabra clave function. También existen las funciones de flecha (=>) que son una forma más corta de definir funciones.
 
+    Declaración de Funciones:
+        Las funciones en JavaScript se pueden declarar de varias formas. La forma más común es utilizando la palabra clave function.
+            Sintaxis:
+            
+            function nombreFuncion(parametro1, parametro2) {
+                // Código a ejecutar
+                return resultado;
+            }
+            Ejemplo:
+            function saludar(nombre) {
+                return `Hola, ${nombre}!`;
+            }
+
+    Llamada a Funciones:
+        Para ejecutar una función en JavaScript, se realiza una llamada a la función utilizando su nombre seguido de paréntesis que pueden contener argumentos.
+            Ejemplo:
+                let mensaje = saludar("Juan");
+                console.log(mensaje); // Output: Hola, Juan!
+
+    Parámetros y Argumentos:
+        Las funciones pueden aceptar parámetros, que son variables utilizadas en la definición de la función, y argumentos, que son valores reales pasados a la función al llamarla.
+            Ejemplo:
+                function sumar(a, b) {
+                    return a + b;
+                }
+                let resultado = sumar(3, 5);
+                console.log(resultado); // Output: 8
+
+        Return :
+        La palabra clave return se utiliza en una función para devolver un valor y finalizar la ejecución de la función.
+            Ejemplo:
+                function multiplicar(a, b) {
+                    return a * b;
+                }
+                let resultado = multiplicar(4, 6);
+                console.log(resultado); // Output: 24
+
+    TIPOS DE FUNCIONES
+
+    console.log() 
+     funcion de salida estándar, ya que su propósito principal es imprimir información en la consola del navegador o del entorno de ejecución de JavaScript. Se utiliza comúnmente para mostrar valores de variables, mensajes de estado y cualquier otra información relevante durante el desarrollo y la depuración de una aplicación.
+
+    Funciones regulares: 
+        Son aquellas funciones que reciben parámetros, realizan ciertas operaciones y devuelven un resultado.
+        Se definen con la palabra clave function seguida del nombre de la función y los parámetros entre paréntesis. 
+            ejemplo:
+
+                function suma(a, b) {
+                    return a + b;
+                }
+                let resultado = suma(3, 5);
+                console.log(resultado); // Output: 8
+
+    Funciones anónimas: 
+        Son funciones que no tienen un nombre específico y se utilizan principalmente como argumentos de otras funciones o para ejecutar código de manera inmediata.
+        Se pueden asignar a variables o pasar como argumentos directamente. 
+            ejemplo:
+
+                let saludar = function(nombre) {
+                    console.log(`Hola, ${nombre}!`);
+                }
+                saludar('Juan'); // Output: Hola, Juan!
+
+    Funciones de flecha (arrow functions): 
+        Son una forma más concisa de escribir funciones en JavaScript, ideales para funciones simples y expresivas.
+            ejemplo:
+
+                let multiplicar = (a, b) => a * b;
+
+                let resultado = multiplicar(4, 6);
+                console.log(resultado); // Output: 24
+
+    Funciones de alto orden (higher-order functions): 
+        Son aquellas funciones que pueden recibir otras funciones como parámetros o devolver funciones como resultado.
+        Son muy útiles para trabajar con funciones de manera dinámica. 
+            ejemplo:
+
+                function operacionMatematica(a, b, operacion) {
+                    return operacion(a, b);
+                }
+
+                let suma = (a, b) => a + b;
+                let resultado = operacionMatematica(3, 4, suma);
+                console.log(resultado); // Output: 7
+
+    Funciones recursivas: 
+        Son funciones que se llaman a sí mismas dentro de su propia definición, útiles para resolver problemas de manera iterativa.
+        ejemplo clásico de una función recursiva para calcular el factorial de un número:
+
+                function factorial(n) {
+                    if (n === 0) {
+                        return 1;
+                    } else {
+                        return n * factorial(n - 1);
+                    }
+                }
+
+                let resultado = factorial(5);
+                console.log(resultado); // Output: 120
+
+
+
+
+
 Objetos:
- Los objetos en JavaScript son colecciones de propiedades, donde cada propiedad es un par de clave-valor. Los objetos pueden contener datos y métodos.
+ Los objetos en JavaScript son estructuras de datos que permiten almacenar múltiples valores de diferentes tipos en pares clave-valor. Se definen utilizando llaves {} y cada par clave-valor dentro de un objeto se separa por comas. Las claves son cadenas de texto que actúan como identificadores únicos para acceder a los valores asociados.
+
+        Por ejemplo, un objeto simple en JavaScript se vería así:
+
+            const persona = {
+                nombre: 'Juan',
+                edad: 30,
+                ciudad: 'Miami'
+            };
+
+          En este caso, nombre, edad y ciudad son las claves, y 'Juan', 30 y 'Miami' son los valores asociados respectivamente. Puedes acceder a los valores de un objeto utilizando la notación de punto o la notación de corchetes:
+
+            console.log(persona.nombre); // Output: Juan
+            console.log(persona['edad']); // Output: 30
+
+
+    OBJETO MATH
+    Algunas de las funciones y constantes más comunes en el objeto Math son:
+
+        Math.floor(): Devuelve el número entero más grande menor o igual a un número.
+        Math.random(): Devuelve un número pseudoaleatorio entre 0 y 1.
+        Math.round(): Devuelve el valor de un número redondeado al entero más cercano.
+        Math.floor(): Devuelve el número entero más grande menor o igual a un número.
+        Math.ceil(): Devuelve el número entero más pequeño mayor o igual a un número.
+        Math.abs(): Devuelve el valor absoluto de un número.
+        Math.max(): Devuelve el número más grande de una lista de argumentos.
+        Math.min(): Devuelve el número más pequeño de una lista de argumentos.
+        Math.PI: Representa la constante matemática Pi, que es la relación entre la circunferencia de un círculo y su diámetro.
+
+            para mas
+                https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+            random entre 7-12
+                math.floor(math.random()*6)+7  
 
 Arrays:
- Los arrays son objetos utilizados para almacenar múltiples valores en una sola variable.
- En esencia es una lista, tambien tiene otros nombres como Arreglo 
+    En esencia es una lista, tambien tiene otros nombres como Arreglo o Vector
+ Un array es una estructura de datos que permite almacenar múltiples valores de forma secuencial bajo un mismo nombre. Puedes acceder a los elementos de un array utilizando un índice numérico que representa la posición del elemento en el array. Los arrays en JavaScript son objetos especiales con propiedades y métodos incorporados que facilitan la manipulación de los datos almacenados en ellos.
+
+            const numeros = [1, 2, 3, 4, 5];
+
+         Para acceder a un elemento específico del array, simplemente utilizas su índice entre corchetes:
+
+            console.log(numeros[2]); // Output: 3
 
 Eventos:
  Los eventos son acciones del usuario que JavaScript puede capturar, como clics del mouse, movimientos del mouse, pulsaciones de teclas, etc.
@@ -72,27 +305,32 @@ DOM (Document Object Model):
 JSON (JavaScript Object Notation):
  JSON es un formato de datos ligero que es fácil de leer y escribir para los humanos y fácil de analizar y generar para las máquinas.  
   
+
+                //fallos
+Null:
+
+    null es un valor especial en JavaScript que indica la ausencia intencional de un valor. Puedes encontrarte con errores relacionados con null cuando intentas acceder a propiedades o métodos de un objeto que es null, lo cual generará un error de tipo TypeError.
+
+Undefined:
+
+    undefined es un valor que se asigna automáticamente a las variables que no han sido inicializadas con un valor. Puedes enfrentar problemas con undefined al intentar acceder a propiedades de un objeto que no existen o al llamar a funciones que no retornan un valor explícito.
+
+NaN (Not a Number):
+
+    NaN es un valor especial que representa un resultado numérico que no es un número válido. Puedes encontrarte con NaN al realizar operaciones matemáticas inválidas, como dividir por cero, o al intentar convertir una cadena que no es un número en un valor numérico.
+
+
+
+
+
   
-                    ///VARIABLES///
-VAR         // variable global  *obsoleta 
- 
-                //VARIABLES DE BLOQUE
-CONST       // "variable" NO MODIFICABLE
-LET         // variable modoficable
-            //tipos de variables{
-        String "hola",'mundo'   //texto  TAMBIEN LLAMADO CADENA (POR ESO LA SUMA DE PALABRAS ES CONCATENADO)
-        Boolean                 // verdadero o falso /binario 1 o 0
-        Number              // ovbio mumeros 23 
-        Number float:0.23   // coma flotante / numero 
-                         // }
+   
+                
+
 
                 /// TERMINAL ///
 console.log   // imprime en la Terminal *util para inspeccionar codigo 
 
-                //fallos
-null            //valor nulo 
-undefined       //valor infedinido
-NaN             //no es un numero / Not a Number
 
 
                 ///    operaciones ///
@@ -108,15 +346,6 @@ NaN             //no es un numero / Not a Number
         <= =>   // menor o igual/mayor o igual        
         ==      //igual pero pueden ser distintos tipos del mismo valor 
         ===     // extrictamente igual de tipo y valor  
-
-
-                ///     condiciones ///
-         if (condition) { //ENTONCES
-        // código a ejecutar si la condición es verdadera
-        } 
-      else {
-         // código a ejecutar si la condición es falsa
-        }
 
 
         
@@ -141,8 +370,6 @@ NaN             //no es un numero / Not a Number
         === // extrictamente igual de tipo y valor  
 
 
-// funciones
-     //       function test(){}
 
 
 
@@ -157,5 +384,5 @@ math.random()        leatorio de 0 a 0.9999999999
 math.floor()          recorta los decimales  y redondea abajo 
 math.ceil()           redondea a lo bruto hacia arriba
 
-        random de 7-12
-math.floor(math.random()*6)+7  // emp
+        random entre 7-12
+math.floor(math.random()*6)+7  
