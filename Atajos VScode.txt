@@ -1,0 +1,47 @@
+CTRL + A: Seleccionar todo.
+Shift +  ↑ / ↓: Seleccionar
+CTRL + L: Selecciona la línea actual.
+
+CTRL + C: Copiar.
+CTRL + V: Pegar.
+CTRL + X: Cortar.
+
+CTRL + Z: Deshacer la última acción.
+CTRL + Y: Rehacer la última acción deshecha.
+
+CTRL + Shift + K: Eliminar la línea actual.
+
+ALT + ↑ / ↓: Mover una línea hacia arriba o hacia abajo.(Indenta la estructura por donde pasas)
+ALT + Shift + ↓ / ↑: Duplicar la línea actual hacia abajo o hacia arriba.
+CTRL + Alt + ↓ / ↑: Añade un cursor arriba o abajo.
+
+ALT + Z: Agrupa lineas largas de codigo
+CTRL + Shift + M: Abre el panel de problemas.
+
+CTRL + S: Guardar el archivo actual.
+CTRL + Shift + S: Guardar todos los archivos abiertos.
+
+CTRL + P: Buscar archivos.
+CTRL + F: Buscar archivos.
+CTRL + Shift + F: Buscar en todos los archivos.
+
+CTRL + Shift + N: Abrir una nueva ventana.
+CTRL + Shift + P: Abrir el menú de comandos.
+CTRL + B: Mostrar o esconder el explorador de archivos.
+
+CTRL + D: Seleccionar la siguiente coincidencia de la selección actual.
+CTRL + Shift + L: Seleccionar todas las coincidencias de la selección actual.              
+
+CTRL + /: Comenta o descomenta la línea actual.
+CTRL + Ç: Comentar o descomentar líneas de código.
+
+CTRL + K, CTRL + C: Comentar el código seleccionado.
+CTRL + K, CTRL + U: Descomentar el código seleccionado.
+
+
+CTRL + Shift + [: Contrae el bloque de código.
+CTRL + Shift + ]: Expande el bloque de código.
+
+CTRL + K, CTRL + 0: Contrae todos los bloques de código.
+CTRL + K, CTRL + J: Expande todos los bloques de código.
+
