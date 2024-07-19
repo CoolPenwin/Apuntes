@@ -1,5 +1,7 @@
 Variables y tipos de datos:
  JavaScript tiene varios tipos de datos como string, number, boolean, null, undefined y object. Las variables se pueden declarar usando var, let o const.
+ el estándar para variables es el formato camelCase
+    Por ejemplo: miVariable, nombreCompleto, edadUsuario.
 
         VARIABLE GLOBAL     
     var: Tiene alcance global o local para una función, independientemente de su bloque de declaración.
