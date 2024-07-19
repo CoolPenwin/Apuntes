@@ -1,9 +1,36 @@
 
+NOMBRAR VARIABLES
+    CamelCase: En esta convención, la primera letra de cada palabra, excepto la de la primera palabra, se capitaliza 
+        Por ejemplo, "numStudents" o "customerAddress".
+
+    Snake case: En esta convención, las palabras se separan con guiones bajos. 
+        Por ejemplo, "num_students" o "customer_address". .
+
+    PascalCase: En esta convención, la primera letra de cada palabra se capitaliza. 
+        Por ejemplo, "NumStudents" o "CustomerAddress"
+
+    Kebab case: donde las palabras se separan con guiones medios.
+        Por ejemplo, "num-students” o “customer-address”
+
+    UpperCamelCase: similar a PascalCase, pero con la primera letra en mayúscula.
+        Por ejemplo, “NumStudents” o “CustomerAddress”
+
+    Screaming Snake Case: similar a Snake case, pero con todas las letras en mayúscula. 
+        Por ejemplo, “NUM_STUDENTS” o “CUSTOMER_ADDRESS”
 
 
+        HTML/CSS: Los nombres de clases y IDs en minúsculas, separando palabras con guiones (-) en lugar de espacios.
+        JavaScript: Utiliza el formato camelCase.
+        Python: Sigue la convención snake_case, donde las palabras se separan con guiones bajos.
+        Java: Utiliza camelCase al igual que JavaScript.
+        C++: Suele seguir la convención camelCase o snake_case, dependiendo de la preferencia del programador o del proyecto en particular.
+        Swift: Utiliza camelCase al igual que JavaScript y Java.
 
-JavaScript: Utiliza el formato camelCase.
-Python: Sigue la convención snake_case, donde las palabras se separan con guiones bajos.
-Java: Utiliza camelCase al igual que JavaScript.
-C++: Suele seguir la convención camelCase o snake_case, dependiendo de la preferencia del programador o del proyecto en particular.
-Swift: Utiliza camelCase al igual que JavaScript y Java.
+
+        JavaScript: Utiliza el formato camelCase.
+        Python: Sigue la convención snake_case, donde las palabras se separan con guiones bajos.
+        Flask: En Flask, se recomienda seguir la convención snake_case para nombrar variables.
+        Django: En Django, se suele utilizar snake_case para nombrar variables y funciones.
+        React: En React, se utiliza camelCase para nombrar componentes y funciones.
+        Node.js: En Node.js, se recomienda seguir la convención camelCase para nombrar variables y funciones.
+        SQL: En SQL, es común utilizar mayúsculas para las palabras clave y minúsculas para los nombres de tablas y columnas, separando palabras con guiones bajos.
