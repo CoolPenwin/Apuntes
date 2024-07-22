@@ -332,6 +332,96 @@ NaN (Not a Number):
 
                 /// TERMINAL ///
 console.log   // imprime en la Terminal *util para inspeccionar codigo 
+    console OBJETO
+        log METODO
+
+
+
+                ///DOOM
+documment.
+        
+
+        document.getElementById(id): Selecciona un elemento por su atributo id. 
+            Este método devuelve un único elemento, ya que los IDs deben ser únicos en un documento HTML.
+
+                const element = document.getElementById('miId');
+
+
+        document.getElementsByClassName(className): Selecciona todos los elementos que tienen una clase específica. 
+            Devuelve una colección de elementos (HTMLCollection).
+
+                const elements = document.getElementsByClassName('miClase');
+
+
+        document.getElementsByTagName(tagName): Selecciona todos los elementos que tienen un nombre de etiqueta específico. 
+            También devuelve una colección de elementos.
+
+                const elements = document.getElementsByTagName('div');
+
+
+        document.querySelector(selector): Selecciona el primer elemento que coincide con un selector CSS. 
+            Este método es muy versátil, ya que permite usar cualquier selector CSS válido.
+
+                const element = document.querySelector('.miClase');
+
+
+        document.querySelectorAll(selector): Selecciona todos los elementos que coinciden con un selector CSS. 
+            Devuelve una NodeList, que es similar a un array.
+
+                const elements = document.querySelectorAll('div.miClase');
+
+
+        document.forms: Selecciona todos los formularios en el documento. 
+            Puedes acceder a un formulario específico por su índice o nombre.
+
+                const form = document.forms[0]; // Primer formulario
+
+        document.links: Selecciona todos los enlaces (<a>) en el documento. 
+            Similar a document.forms, puedes acceder a un enlace específico por su índice.
+
+                const link = document.links[0]; // Primer enlace
+
+        document.images: Selecciona todas las imágenes (<img>) en el documento.
+
+                const image = document.images[0]; // Primera imagen
+
+
+        document.getElementById(id): Selecciona un elemento por su atributo id.
+
+        document.getElementsByClassName(className): Selecciona todos los elementos que tienen una clase específica.
+
+        document.getElementsByTagName(tagName): Selecciona todos los elementos que tienen un nombre de etiqueta específico.
+
+        document.querySelector(selector): Selecciona el primer elemento que coincide con un selector CSS.
+
+        document.querySelectorAll(selector): Selecciona todos los elementos que coinciden con un selector CSS.
+
+        document.forms: Selecciona todos los formularios en el documento.
+
+        document.links: Selecciona todos los enlaces (<a>) en el documento.
+
+        document.images: Selecciona todas las imágenes (<img>) en el documento.
+
+        document.head: Accede al elemento <head> del documento.
+
+        document.body: Accede al elemento <body> del documento.
+
+        document.title: Permite obtener o establecer el título del documento.
+
+        document.cookie: Permite acceder a las cookies del documento.
+
+        document.location: Proporciona información sobre la URL del documento.
+
+        document.readyState: Indica el estado de carga del documento.
+
+        document.createElement(tagName): Crea un nuevo elemento HTML con el nombre de etiqueta especificado.
+
+        document.createTextNode(text): Crea un nuevo nodo de texto.
+
+        document.getElementsByName(name): Selecciona todos los elementos que tienen un atributo name específico.
+
+
+
 
 
 
