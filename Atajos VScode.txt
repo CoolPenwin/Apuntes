@@ -10,6 +10,7 @@ CTRL + Z: Deshacer la última acción.
 CTRL + Y: Rehacer la última acción deshecha.
 
 CTRL + Shift + K: Eliminar la línea actual.
+
 CTRL + ESPACIO: sugerencia de codigo [autocompletar]
 
 
@@ -46,4 +47,7 @@ CTRL + Shift + ]: Expande el bloque de código.
 
 CTRL + K, CTRL + 0: Contrae todos los bloques de código.
 CTRL + K, CTRL + J: Expande todos los bloques de código.
+
+
+
 
