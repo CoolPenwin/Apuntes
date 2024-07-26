@@ -10,6 +10,8 @@ CTRL + Z: Deshacer la última acción.
 CTRL + Y: Rehacer la última acción deshecha.
 
 CTRL + Shift + K: Eliminar la línea actual.
+CTRL + ESPACIO: sugerencia de codigo [autocompletar]
+
 
 ALT + ↑ / ↓: Mover una línea hacia arriba o hacia abajo.(Indenta la estructura por donde pasas)
 ALT + Shift + ↓ / ↑: Duplicar la línea actual hacia abajo o hacia arriba.
