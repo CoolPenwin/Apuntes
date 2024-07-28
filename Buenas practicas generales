@@ -37,6 +37,7 @@ NOMBRAR VARIABLES
         Por ejemplo, “NUM_STUDENTS” o “CUSTOMER_ADDRESS”
         se usa comunmente en:
             SQL: en palabras clave
+            *todas* cuando una variable no quiere funcionar 
 
 
         HTML/CSS: Los nombres de clases y IDs en minúsculas, separando palabras con guiones (-) en lugar de espacios.
