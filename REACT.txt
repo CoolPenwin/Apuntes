@@ -1,0 +1,15 @@
+
+1ºIMPORTAR REACT
+        solo una vez por proyecto
+
+2º CREAR COMPONENTE
+        se crearan muchos mas 
+
+3º EXPORTAR COMPONENTE  para que sea accesible
+        se exportan cada uno de los componentes
+
+4º IMPORTAR COMPONENTE DESEADO EN EL "ARCHIVO FINAL"
+        por ejemplo se monta la pagina en index  y se importan todos los componentes deseados 
+
+5º USAR COMPONENTE 
+        esto solo por que lo dijo el profe 

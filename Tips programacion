@@ -1,1 +1,6 @@
 div.nombreclase>div.subNombre>ul.lista*10
+
+
+
+ruta de archivo src="./ruta/al/archivo.extansion"
+ruta de archivo fuera de la carpeta desde donde llamas src="../../ruta/al/archivo.extansion"

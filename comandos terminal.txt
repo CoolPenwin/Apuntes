@@ -39,6 +39,7 @@ Ver/LiStar que hay
         cd              te manda a carpeta madre root 4 ~
         cd ..           ir 1 nivel arriba/atras
         cd ../../       ir 2 nivel arriba/atras
+                
 
 Crear directorio        
         mkdir 
