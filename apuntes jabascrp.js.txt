@@ -2,7 +2,7 @@ Variables y tipos de datos:
  JavaScript tiene varios tipos de datos como string, number, boolean, null, undefined y object. Las variables se pueden declarar usando var, let o const.
  el estándar para variables es el formato camelCase
     Por ejemplo: miVariable, nombreCompleto, edadUsuario.
-
+<>
         VARIABLE GLOBAL     
     var: Tiene alcance global o local para una función, independientemente de su bloque de declaración.
 
@@ -297,6 +297,43 @@ Arrays:
          Para acceder a un elemento específico del array, simplemente utilizas su índice entre corchetes:
 
             console.log(numeros[2]); // Output: 3
+
+
+            MAP solo funcione en arrays 
+
+
+                        Recorre cada elemento: map pasa por cada elemento del array original.
+                Aplica una función: Para cada elemento, map aplica una función que tú defines.
+                Crea un nuevo array: El resultado de aplicar la función a cada elemento se guarda en un nuevo array.
+                Ejemplo básico
+                Supongamos que tienes un array de números y quieres crear un nuevo array donde cada número esté multiplicado por 2.
+
+                const numbers = [1, 2, 3, 4, 5];
+                const doubled = numbers.map(function(number) {
+                    return number * 2;
+                });
+                console.log(doubled); // [2, 4, 6, 8, 10]
+                Desglosemos el ejemplo
+                Array original: [1, 2, 3, 4, 5]
+                Función de transformación: function(number) { return number * 2; }
+                Nuevo array: [2, 4, 6, 8, 10]
+                Usando funciones flecha
+                Puedes hacer lo mismo con una función flecha para que el código sea más conciso:
+
+                const doubled = numbers.map(number => number * 2);
+                Ejemplo con objetos
+                Supongamos que tienes un array de objetos y quieres extraer una propiedad específica de cada objeto:
+
+                const users = [
+                    { name: 'Alice', age: 25 },
+                    { name: 'Bob', age: 30 },
+                    { name: 'Charlie', age: 35 }
+                ];
+
+                const names = users.map(user => user.name);
+                console.log(names); // ['Alice', 'Bob', 'Charlie']
+
+
 
 Eventos:
  Los eventos son acciones del usuario que JavaScript puede capturar, como clics del mouse, movimientos del mouse, pulsaciones de teclas, etc.
