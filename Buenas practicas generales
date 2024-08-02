@@ -1,11 +1,10 @@
 
 NOMBRAR VARIABLES
-    CamelCase: En esta convención, la primera letra de cada palabra, excepto la de la primera palabra, se capitaliza 
+    camelCase: En esta convención, la primera letra de cada palabra, excepto la de la primera palabra, se capitaliza 
         Por ejemplo, "numStudents" o "customerAddress"
         se usa en:
             Java
-            JavaScript
-            React
+            JavaScript            
             Node.js
             Swift
             C++: Suele seguir la convención camelCase o snake_case, dependiendo de la preferencia del programador o del proyecto en particular.
@@ -21,6 +20,7 @@ NOMBRAR VARIABLES
     PascalCase: En esta convención, la primera letra de cada palabra se capitaliza. 
         Por ejemplo, "NumStudents" o "CustomerAddress"
         se usa comunmente en:
+            React .jsx
 
     kebab-case: donde las palabras se separan con guiones medios.
         Por ejemplo, "num-students” o “customer-address”
