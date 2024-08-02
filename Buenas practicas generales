@@ -37,6 +37,7 @@ NOMBRAR VARIABLES
         Por ejemplo, “NUM_STUDENTS” o “CUSTOMER_ADDRESS”
         se usa comunmente en:
             SQL: en palabras clave
+            COBOL
             *todas* cuando una variable no quiere funcionar 
 
 
@@ -52,3 +53,4 @@ NOMBRAR VARIABLES
         Node.js: En Node.js, se recomienda seguir la convención camelCase para nombrar variables y funciones.
 
         SQL: En SQL, es común utilizar mayúsculas para las palabras clave y minúsculas para los nombres de tablas y columnas, separando palabras con guiones bajos.
+        COBOL (Common Business-Oriented Language) es un lenguaje de programación que utiliza un estilo de escritura en mayúsculas
