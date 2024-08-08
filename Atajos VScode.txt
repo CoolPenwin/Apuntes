@@ -18,6 +18,9 @@ ALT + ↑ / ↓: Mover una línea hacia arriba o hacia abajo.(Indenta la estruct
 ALT + Shift + ↓ / ↑: Duplicar la línea actual hacia abajo o hacia arriba.
 CTRL + Alt + ↓ / ↑: Añade un cursor arriba o abajo.
 
+CTRL + D: Seleccionar la siguiente coincidencia de la selección actual.
+CTRL + Shift + L: Seleccionar todas las coincidencias de la selección actual. 
+             
 ALT + Z: Agrupa lineas largas de codigo
 CTRL + Shift + M: Abre el panel de problemas.
 
@@ -32,8 +35,6 @@ CTRL + Shift + N: Abrir una nueva ventana.
 CTRL + Shift + P: Abrir el menú de comandos.
 CTRL + B: Mostrar o esconder el explorador de archivos.
 
-CTRL + D: Seleccionar la siguiente coincidencia de la selección actual.
-CTRL + Shift + L: Seleccionar todas las coincidencias de la selección actual.              
 
 CTRL + /: Comenta o descomenta la línea actual.
 CTRL + Ç: Comentar o descomentar líneas de código.

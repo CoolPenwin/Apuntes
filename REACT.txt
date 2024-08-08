@@ -13,3 +13,121 @@
 
 5º USAR COMPONENTE 
         esto solo por que lo dijo el profe 
+
+
+<estructura-de-componente>
+
+import React from "react";
+        // aqui importaciones
+
+    const *Componente*=()=>{
+        // aqui JS
+
+        return(
+            <>
+                //aqui  HTML con pijadillas
+                        // class => className
+                        // cierre de etiquetas especial 
+                        // <img />
+                        // <hr className ="dropdown-divider"/>
+                        // <input />
+            </>
+
+                    );
+    };
+
+    export default *Componente*;
+
+</estructura-de-componente>
+
+
+
+
+Fragment: Se usa para agrupar una lista de hijos sin agregar nodos adicionales al DOM.
+
+        <React.Fragment>
+        <Child1 />
+        <Child2 />
+        </React.Fragment>
+
+StrictMode: Ayuda a identificar problemas potenciales en la aplicación. Solo se activa en modo de desarrollo.
+
+        <React.StrictMode>
+        <App />
+        </React.StrictMode>
+
+Suspense: Permite mostrar un fallback mientras se carga un componente asíncrono.
+
+        <React.Suspense fallback={<div>Loading...</div>}>
+        <LazyComponent />
+        </React.Suspense>
+
+Profiler: Mide el rendimiento de los componentes.
+
+        <React.Profiler id="App" onRender={callback}>
+        <App />
+        </React.Profiler>
+
+Portals: Permiten renderizar hijos en un nodo del DOM que existe fuera de la jerarquía del DOM del componente padre.
+
+        ReactDOM.createPortal(
+        <Child />,
+        document.getElementById('portal-root')
+        );
+
+
+
+Self-Closing Tags: En React, las etiquetas que no tienen hijos deben ser auto-cerradas. Por ejemplo:
+
+        <img src="image.jpg" alt="description" />
+        <input type="text" />
+        <br />
+
+
+JSX Expressions: Puedes incluir expresiones JavaScript dentro de JSX usando llaves {}.
+
+        const name = "John";
+        <h1>Hello, {name}!</h1>
+
+
+Event Handling: Los eventos en React se nombran usando camelCase en lugar de minúsculas.
+
+        <button onClick={handleClick}>Click me</button>
+
+
+
+Attributes: Algunos atributos HTML tienen nombres diferentes en React:
+
+        class se convierte en className
+        for se convierte en htmlFor
+        tabindex se convierte en tabIndex
+
+
+Fragments: Como mencionamos antes, puedes usar <React.Fragment> o su forma abreviada <> </> para agrupar elementos sin agregar nodos adicionales al DOM.
+
+        <>
+                <Child1 />
+                <Child2 />
+        </>
+
+
+Conditional Rendering: Puedes usar operadores ternarios o && para renderizar condicionalmente.
+
+        {isLoggedIn ? <LogoutButton /> : <LoginButton />}
+        {messages.length > 0 && <MessageList messages={messages} />}
+
+
+Lists and Keys: Cuando renderizas listas de elementos, cada elemento debe tener una key única.
+
+        const items = ['Item1', 'Item2', 'Item3'];
+        <ul>
+                {items.map((item, index) => (
+                        <li key={index}>{item}</li>
+                ))}
+        </ul>
+
+
+Refs: Para acceder directamente a un DOM element o a un componente, puedes usar refs.
+
+        const myRef = React.createRef();
+        <div ref={myRef}></div>

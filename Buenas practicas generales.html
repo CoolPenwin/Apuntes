@@ -1,0 +1,117 @@
+
+<NOMBRAR-VARIABLES>
+    
+        <camelCase>
+            En esta convención, la primera letra de cada palabra, excepto la de la primera palabra, se capitaliza.
+            Por ejemplo, "numStudents" o "customerAddress".
+            Se usa en:
+            <lenguajes>
+                Java
+                JavaScript
+                Node.js
+                Swift
+                C++: Suele seguir la convención camelCase o snake_case, dependiendo de la preferencia del programador o del proyecto en particular.
+            </lenguajes>
+        </camelCase>
+        
+        <snake_case>
+            En esta convención, las palabras se separan con guiones bajos.
+            Por ejemplo, "num_students" o "customer_address".
+            Se usa comúnmente en:
+            <lenguajes>
+                Python
+                Flask
+                C++: Suele seguir la convención camelCase o snake_case, dependiendo de la preferencia del programador o del proyecto en particular.
+                Django
+            </lenguajes>
+        </snake_case>
+    
+        <PascalCase>
+            En esta convención, la primera letra de cada palabra se capitaliza.
+            Por ejemplo, "NumStudents" o "CustomerAddress".
+            Se usa comúnmente en:
+            <lenguajes>
+                React .jsx
+            </lenguajes>
+        </PascalCase>
+    
+        <kebab-case>
+            En esta convención, las palabras se separan con guiones medios.
+            Por ejemplo, "num-students" o "customer-address".
+            Se usa comúnmente en:
+            <lenguajes>
+                HTML/CSS: Los nombres de clases y IDs en minúsculas, separando palabras con guiones (-) en lugar de espacios.
+            </lenguajes>
+        </kebab-case>
+    
+        <UpperCamelCase>
+            Similar a PascalCase, pero con la primera letra en mayúscula.
+            Por ejemplo, "NumStudents" o "CustomerAddress".
+            Se usa comúnmente para nombrar clases en lenguajes como:
+            <lenguajes>
+                Java
+                C#
+                Ruby
+            </lenguajes>
+        </UpperCamelCase>
+    
+        <SCREAMING_SNAKE_CASE>
+            Similar a snake_case, pero con todas las letras en mayúscula.
+            Por ejemplo, "NUM_STUDENTS" o "CUSTOMER_ADDRESS".
+            Se usa comúnmente en:
+            <lenguajes>
+                SQL: en palabras clave
+                COBOL
+                *todas* cuando una variable no quiere funcionar
+            </lenguajes>
+        </SCREAMING_SNAKE_CASE>
+    
+
+<!-- 
+        HTML/CSS: Los nombres de clases y IDs en minúsculas, separando palabras con guiones (-) en lugar de espacios.
+        JavaScript: Utiliza el formato camelCase.
+        Python: Sigue la convención snake_case, donde las palabras se separan con guiones bajos.
+        Java: Utiliza camelCase al igual que JavaScript.
+        C++: Suele seguir la convención camelCase o snake_case, dependiendo de la preferencia del programador o del proyecto en particular.
+        Swift: Utiliza camelCase al igual que JavaScript y Java.
+        Flask: En Flask, se recomienda seguir la convención snake_case para nombrar variables.
+        Django: En Django, se suele utilizar snake_case para nombrar variables y funciones.
+        React: En React, se utiliza camelCase para nombrar componentes y funciones.
+        Node.js: En Node.js, se recomienda seguir la convención camelCase para nombrar variables y funciones.
+
+        SQL: En SQL, es común utilizar mayúsculas para las palabras clave y minúsculas para los nombres de tablas y columnas, separando palabras con guiones bajos.
+        COBOL es un lenguaje de programación que utiliza un estilo de escritura en mayúsculas
+         -->
+</NOMBRAR-VARIABLES>
+
+<GIT>
+    <COMMIT>
+
+    </COMMIT>
+     Commit  hacer uno por funcionalidad, fin de rato trabajado , final del dia
+
+    Buenas Prácticas para Guardar Cambios en Git
+    1º 
+    git status
+    Comprobar Archivos modificados 
+    2º 
+    git add <archivos modificados>
+        Añadir Modificaciones
+    3º 
+    git diff .
+        Verificar Diferencias
+    *   Si has modificado un archivo y no quieres añadirlo al commit pero deseas conservar los cambios, usa:
+    git restore --staged <archivo>
+        Esto quitará el archivo del índice (staging area) pero mantendrá los cambios en el área de trabajo.
+    4º 
+    git commit -m "mensaje descriptivo"
+        Confirmar los Cambios (Commit)
+    5º 
+    Sincronizar con el Repositorio Remoto
+    git pull origin main
+        Primero, asegúrate de que tu rama local esté actualizada con la rama remota
+    6º    
+    git push origin main
+        Luego, envía tus commits locales al repositorio remoto
+
+</GIT>
