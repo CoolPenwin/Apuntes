@@ -13,14 +13,15 @@ CTRL + Shift + K: Eliminar la línea actual.
 
 CTRL + ESPACIO: sugerencia de codigo [autocompletar]
 
-
 ALT + ↑ / ↓: Mover una línea hacia arriba o hacia abajo.(Indenta la estructura por donde pasas)
 ALT + Shift + ↓ / ↑: Duplicar la línea actual hacia abajo o hacia arriba.
 CTRL + Alt + ↓ / ↑: Añade un cursor arriba o abajo.
 
+ALT + clicks: Duplicar Cursor en puntos de tu elección
 CTRL + D: Seleccionar la siguiente coincidencia de la selección actual.
 CTRL + Shift + L: Seleccionar todas las coincidencias de la selección actual. 
-             
+
+
 ALT + Z: Agrupa lineas largas de codigo
 CTRL + Shift + M: Abre el panel de problemas.
 
