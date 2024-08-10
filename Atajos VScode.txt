@@ -28,6 +28,7 @@ CTRL + Alt + ↓ / ↑: Añade un cursor arriba o abajo.
 
 
 ALT + Z: Agrupa lineas largas de codigo
+Shift + ALT + F : Dar formato bonito
 
 BUSCAR
     CTRL + P: Buscar archivos.
