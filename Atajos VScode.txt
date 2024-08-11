@@ -8,8 +8,9 @@ BASICOS
 
 SELECCIONAR
     CTRL + A: Seleccionar todo.
-    Shift +  ↑ / ↓: Seleccionar
+
     CTRL + L: Selecciona la línea actual.
+    Shift +  ↑ / ↓: Seleccionar
 
 
     ALT + clicks: Duplicar Cursor en puntos de tu elección
@@ -26,9 +27,8 @@ ALT + ↑ / ↓: Mover una línea hacia arriba o hacia abajo.(Indenta la estruct
 ALT + Shift + ↓ / ↑: Duplicar la línea actual hacia abajo o hacia arriba.
 CTRL + Alt + ↓ / ↑: Añade un cursor arriba o abajo.
 
-
 ALT + Z: Agrupa lineas largas de codigo
-Shift + ALT + F : Dar formato bonito
+Shift + ALT + F: Dar formato bonito al codigo
 
 BUSCAR
     CTRL + P: Buscar archivos.
