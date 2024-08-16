@@ -17,117 +17,364 @@
 
 <estructura-de-componente>
 
-import React from "react";
-        // aqui importaciones
+        import React from "react";
+                // aqui importaciones
 
-    const *Componente*=()=>{
-        // aqui JS
+        const *Componente*=()=>{
+                // aqui Logica JS
 
-        return(
-            <>
-                //aqui  HTML con pijadillas
-                        // class => className
-                        // cierre de etiquetas especial 
-                        // <img />
-                        // <hr className ="dropdown-divider"/>
-                        // <input />
-            </>
+                return(
+                <>
+                        //aqui  HTML con pijadillas
+                                // class => className
+                                // cierre de etiquetas especial 
+                                        // <img />
+                                        // <input />
+                                        // <hr className ="dropdown-divider"/>
+                </>
 
-                    );
-    };
+                );
+        };
 
-    export default *Componente*;
+        export default *Componente*;
 
 </estructura-de-componente>
 
 
 
+<elementos> 
 
-Fragment: Se usa para agrupar una lista de hijos sin agregar nodos adicionales al DOM.
+        Fragment: Se usa para agrupar una lista de hijos sin agregar nodos adicionales al DOM.
 
-        <React.Fragment>
-        <Child1 />
-        <Child2 />
-        </React.Fragment>
-
-StrictMode: Ayuda a identificar problemas potenciales en la aplicación. Solo se activa en modo de desarrollo.
-
-        <React.StrictMode>
-        <App />
-        </React.StrictMode>
-
-Suspense: Permite mostrar un fallback mientras se carga un componente asíncrono.
-
-        <React.Suspense fallback={<div>Loading...</div>}>
-        <LazyComponent />
-        </React.Suspense>
-
-Profiler: Mide el rendimiento de los componentes.
-
-        <React.Profiler id="App" onRender={callback}>
-        <App />
-        </React.Profiler>
-
-Portals: Permiten renderizar hijos en un nodo del DOM que existe fuera de la jerarquía del DOM del componente padre.
-
-        ReactDOM.createPortal(
-        <Child />,
-        document.getElementById('portal-root')
-        );
-
-
-
-Self-Closing Tags: En React, las etiquetas que no tienen hijos deben ser auto-cerradas. Por ejemplo:
-
-        <img src="image.jpg" alt="description" />
-        <input type="text" />
-        <br />
-
-
-JSX Expressions: Puedes incluir expresiones JavaScript dentro de JSX usando llaves {}.
-
-        const name = "John";
-        <h1>Hello, {name}!</h1>
-
-
-Event Handling: Los eventos en React se nombran usando camelCase en lugar de minúsculas.
-
-        <button onClick={handleClick}>Click me</button>
-
-
-
-Attributes: Algunos atributos HTML tienen nombres diferentes en React:
-
-        class se convierte en className
-        for se convierte en htmlFor
-        tabindex se convierte en tabIndex
-
-
-Fragments: Como mencionamos antes, puedes usar <React.Fragment> o su forma abreviada <> </> para agrupar elementos sin agregar nodos adicionales al DOM.
-
-        <>
+                <React.Fragment>
                 <Child1 />
                 <Child2 />
-        </>
+                </React.Fragment>
+
+        StrictMode: Ayuda a identificar problemas potenciales en la aplicación. 
+        Solo se activa en modo de desarrollo.
+
+                <React.StrictMode>
+                <App />
+                </React.StrictMode>
+
+        Suspense: Permite mostrar un fallback mientras se carga un componente asíncrono.
+
+                <React.Suspense fallback={<div>Loading...</div>}>
+                <LazyComponent />
+                </React.Suspense>
+
+        Profiler: Mide el rendimiento de los componentes.
+
+                <React.Profiler id="App" onRender={callback}>
+                <App />
+                </React.Profiler>
+
+        Portals: Permiten renderizar hijos en un nodo del DOM que existe fuera de la jerarquía del DOM del componente padre.
+
+                ReactDOM.createPortal(
+                <Child />,
+                document.getElementById('portal-root')
+                );
 
 
-Conditional Rendering: Puedes usar operadores ternarios o && para renderizar condicionalmente.
 
-        {isLoggedIn ? <LogoutButton /> : <LoginButton />}
-        {messages.length > 0 && <MessageList messages={messages} />}
+        Self-Closing Tags: En React, las etiquetas que no tienen hijos deben ser auto-cerradas. 
+                Por ejemplo:
 
-
-Lists and Keys: Cuando renderizas listas de elementos, cada elemento debe tener una key única.
-
-        const items = ['Item1', 'Item2', 'Item3'];
-        <ul>
-                {items.map((item, index) => (
-                        <li key={index}>{item}</li>
-                ))}
-        </ul>
+                <img src="image.jpg" alt="description" />
+                <input type="text" />
+                <br />
 
 
-Refs: Para acceder directamente a un DOM element o a un componente, puedes usar refs.
+        JSX Expressions: Puedes incluir expresiones JavaScript dentro de JSX usando llaves {}.
 
-        const myRef = React.createRef();
-        <div ref={myRef}></div>
+                const name = "John";
+                <h1>Hello, {name}!</h1>
+
+
+        Event Handling: Los eventos en React se nombran usando camelCase en lugar de minúsculas.
+
+                <button onClick={handleClick}>Click me</button>
+
+
+
+        Attributes: Algunos atributos HTML tienen nombres diferentes en React:
+
+                class se convierte en className
+                for se convierte en htmlFor
+                tabindex se convierte en tabIndex
+
+
+        Fragments: Como mencionamos antes, puedes usar <React.Fragment> o su forma abreviada <> </> para agrupar elementos sin agregar nodos adicionales al DOM.
+
+                <>
+                        <Child1 />
+                        <Child2 />
+                </>
+
+
+        Conditional Rendering: Puedes usar operadores ternarios o && para renderizar condicionalmente.
+
+                {isLoggedIn ? <LogoutButton /> : <LoginButton />}
+                {messages.length > 0 && <MessageList messages={messages} />}
+
+
+        Lists and Keys: Cuando renderizas listas de elementos, cada elemento debe tener una key única.
+
+                const items = ['Item1', 'Item2', 'Item3'];
+                <ul>
+                        {items.map((item, index) => (
+                                <li key={index}>{item}</li>
+                        ))}
+                </ul>
+
+
+        Refs: Para acceder directamente a un DOM element o a un componente, puedes usar refs.
+
+                const myRef = React.createRef();
+                <div ref={myRef}></div>
+</elementos>
+
+<hooks>
+        useState
+                El hook useState te permite añadir estado a tus componentes funcionales. 
+                Es una forma de mantener y actualizar valores a lo largo del ciclo de vida del componente.
+
+                Ejemplo detallado:
+
+                        import React, { useState } from 'react';
+
+                        function Counter() {
+                        // Declaramos una variable de estado llamada "count" y una función para actualizarla llamada "setCount"
+                        const [count, setCount] = useState(0);
+
+                        return (
+                        <div>
+                        <p>You clicked {count} times</p>
+                        <button onClick={() => setCount(count + 1)}>
+                                Click me
+                        </button>
+                        </div>
+                        );
+                        }
+
+
+
+        useEffect
+                El hook useEffect te permite realizar efectos secundarios en tus componentes funcionales. 
+                Puedes pensar en él como una combinación de componentDidMount, componentDidUpdate y componentWillUnmount en componentes de clase.
+
+                Ejemplo detallado:
+
+                        import React, { useEffect, useState } from 'react';
+
+                        function DataFetcher() {
+                        const [data, setData] = useState(null);
+
+                        useEffect(() => {
+                        // Realizamos una petición HTTP cuando el componente se monta
+                        fetch('https://api.example.com/data')
+                        .then(response => response.json())
+                        .then(data => setData(data));
+                        }, []); // El array vacío significa que este efecto solo se ejecuta una vez, al montar el componente
+
+                        return (
+                        <div>
+                        {data ? <p>{data}</p> : <p>Loading...</p>}
+                        </div>
+                        );
+                        }
+
+
+        useContext
+                El hook useContext te permite acceder al contexto de React, que es una forma de pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel.
+
+                Ejemplo detallado:
+
+                        import React, { useContext } from 'react';
+
+                        const MyContext = React.createContext();
+
+                        function MyComponent() {
+                        const value = useContext(MyContext);
+
+                        return <div>{value}</div>;
+                        }
+
+                        function App() {
+                        return (
+                        <MyContext.Provider value="Hello, World!">
+                        <MyComponent />
+                        </MyContext.Provider>
+                        );
+                        }
+
+
+        useReducer
+                El hook useReducer es una alternativa a useState para manejar estados más complejos. 
+                Es similar a cómo funcionan los reducers en Redux.
+
+                Ejemplo detallado:
+
+                import React, { useReducer } from 'react';
+
+                const initialState = { count: 0 };
+
+                        function reducer(state, action) {
+                        switch (action.type) {
+                        case 'increment':
+                        return { count: state.count + 1 };
+                        case 'decrement':
+                        return { count: state.count - 1 };
+                        default:
+                        throw new Error();
+                        }
+                        }
+
+                        function Counter() {
+                        const [state, dispatch] = useReducer(reducer, initialState);
+
+                        return (
+                        <div>
+                        <p>Count: {state.count}</p>
+                        <button onClick={() => dispatch({ type: 'increment' })}>+</button>
+                        <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
+                        </div>
+                        );
+                        }
+
+
+        useRef
+                El hook useRef te permite crear una referencia mutable que persiste durante todo el ciclo de vida del componente. 
+                Es útil para acceder directamente a elementos del DOM o para mantener cualquier valor mutable.
+
+                Ejemplo detallado:
+
+                        import React, { useRef } from 'react';
+
+                        function TextInputWithFocusButton() {
+                        const inputEl = useRef(null);
+
+                        const onButtonClick = () => {
+                        inputEl.current.focus();
+                        };
+
+                        return (
+                        <div>
+                        <input ref={inputEl} type="text" />
+                        <button onClick={onButtonClick}>Focus the input</button>
+                        </div>
+                        );
+                        }
+
+
+        useMemo y useCallback
+                Estos hooks te permiten optimizar el rendimiento de tus componentes al memorizar valores y funciones.
+
+                        Ejemplo detallado de useMemo:
+
+                        import React, { useMemo } from 'react';
+
+                        function ExpensiveCalculationComponent({ num }) {
+                        const result = useMemo(() => {
+                        // Simula una operación costosa
+                        return num * 2;
+                        }, [num]);
+
+                        return <div>Result: {result}</div>;
+                        }
+                Ejemplo detallado de useCallback:
+
+                        import React, { useCallback } from 'react';
+
+                        function Button({ onClick }) {
+                        return <button onClick={onClick}>Click me</button>;
+                        }
+
+                        function ParentComponent() {
+                        const handleClick = useCallback(() => {
+                        console.log('Button clicked');
+                        }, []);
+
+                        return <Button onClick={handleClick} />;
+                }
+</hooks>
+
+<API>
+        APIs de React
+        Componentes de Clase y Funcionales:
+
+                 Componentes de Clase: Utilizan la sintaxis de clases de ES6 y tienen acceso a métodos del ciclo de vida como componentDidMount, componentDidUpdate, etc.
+                 Componentes Funcionales: Son funciones de JavaScript que aceptan props y devuelven elementos de React.
+                         Con la introducción de los hooks, los componentes funcionales pueden manejar estado y efectos secundarios.
+
+        Hooks:
+
+                useState: Para manejar el estado en componentes funcionales.
+                useEffect: Para manejar efectos secundarios como peticiones HTTP, suscripciones, etc.
+                useContext: Para acceder al contexto de React.
+                useReducer: Para manejar estados más complejos.
+                useRef: Para crear referencias mutables.
+                useMemo y useCallback: Para optimizar el rendimiento.
+
+        Context API:
+
+                Permite pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel. Es útil para temas, usuarios autenticados, etc.
+                APIs Externas
+
+        REST APIs:
+
+                Utilizan HTTP para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar). Las peticiones se hacen generalmente con fetch o bibliotecas como axios.
+                Ejemplo:
+                        useEffect(() => {
+                        fetch('https://api.example.com/data')
+                        .then(response => response.json())
+                        .then(data => setData(data));
+                        }, []);
+
+        GraphQL APIs:
+
+                Permiten realizar consultas más flexibles y específicas. En lugar de múltiples endpoints, tienes un único endpoint donde puedes especificar exactamente los datos que necesitas.
+                Ejemplo:
+                        import { useQuery, gql } from '@apollo/client';
+
+                        const GET_DATA = gql`
+                        query {
+                        data {
+                        id
+                        name
+                        }
+                        }
+                        `;
+
+                        function DataFetcher() {
+                        const { loading, error, data } = useQuery(GET_DATA);
+
+                        if (loading) return <p>Loading...</p>;
+                        if (error) return <p>Error :(</p>;
+
+                        return data.data.map(({ id, name }) => (
+                        <div key={id}>
+                        <p>{name}</p>
+                        </div>
+                        ));
+                        }
+
+        Firebase:
+
+                Una plataforma de Google que ofrece una base de datos en tiempo real, autenticación, almacenamiento y más. Es muy popular para aplicaciones móviles y web.
+                Ejemplo:
+                        import firebase from 'firebase/app';
+                        import 'firebase/firestore';
+
+                        const db = firebase.firestore();
+
+                        function addData() {
+                        db.collection('users').add({
+                        first: 'Ada',
+                        last: 'Lovelace',
+                        born: 1815
+                        });
+                        }
+</API>
