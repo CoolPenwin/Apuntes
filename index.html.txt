@@ -189,6 +189,7 @@ Etiquetas estructurales:
                                 Script en línea: Se coloca directamente dentro de una etiqueta HTML específica para ejecutar código JavaScript en respuesta a eventos.
 
                                     <button onclick="alert('¡Hola!')">Haz clic aquí</button>
+                    </script>
 
         <body>: Contiene el contenido visible de la página web.
 
@@ -220,13 +221,14 @@ Etiquetas de tabla:
         <th>: Encabezado de celda.
 
 
-Etiquetas de texto:
+<Etiquetas de texto>:
 
         <h1> a <h6>: Encabezados, donde <h1> es el más importante y <h6> el menos.
         <p>: Párrafo.
         <a>: Enlace.
         <strong>: Texto en negrita.
         <em>: Texto en cursiva.
+</Etiquetas de texto>
 
 Etiquetas de lista:
 
@@ -312,7 +314,7 @@ Etiquetas de formulario:
                     
                 Botón de reinicio (reset): Permite al usuario restablecer el formulario a sus valores predeterminados.
                     <input type="reset" value="Restablecer">
-                    
+        </input>    
 
         <label>: Etiqueta para un campo de entrada.
                 Etiqueta con atributo for: Asocia la etiqueta con un elemento de formulario mediante el atributo for, que debe coincidir con el atributo id del elemento de formulario.
@@ -346,7 +348,9 @@ Etiquetas de formulario:
 
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje"></textarea>
-
-
+        </label>
         <button>: Botón.
+        
+        </buttom>
+    </form>
 
