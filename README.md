@@ -13,20 +13,24 @@ Apuntes de programación generados a partir de lo aprendido durante mi paso por 
 No se requiere instalación especial. Simplemente clona el repositorio y navega por los archivos para encontrar los apuntes que necesitas.
 
 ## Uso
-Para utilizar estos apuntes, sigue la estructura de etiquetas proporcionada para encontrar y cerrar etiquetas correctamente. Aquí tienes un ejemplo de cómo están organizados los elementos principales y subgrupos:
+Para utilizar estos apuntes, sigue la estructura de etiquetas HTML cambiando la palabra clave por el grupo  para encontrar y cerrar etiquetas correctamente. Aquí tienes un ejemplo de cómo están organizados los elementos principales y subgrupos:
 
 ### Ejemplo de Estructura de Etiquetas de Formulario
 Etiquetas de formulario:
 
-    <form>: Define un formulario.
+    <form>: 
+        Definicion de un formulario.    // etiqueta Principal con contenido desplegado
 
-        <input>: Campo de entrada.
+        <input>: Campo de entrada.      // etiqueta con contenido desplegado
                 Texto (text): Permite al usuario ingresar texto.     
                 Contraseña (password): Permite al usuario ingresar una contraseña, ocultando los caracteres.
-                [...]
+                [...] 
         </input> 
-        <label>:[...]
+        <label>:[...]                  // etiqueta contraida 
         </label>
+        <button>:[...]                 // etiqueta contraida 
+        </button>
+
       </form>
 
 ## Contribución
@@ -36,6 +40,13 @@ Si deseas contribuir a este repositorio, por favor sigue las siguientes pautas:
 3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
 4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
+
+si te 
+
+### Colaboradores
+- [Davinia pd]([https://github.com/usuario1](https://github.com/daviniapd)): Davinia estuvo aqui.
+- [Nombre del Colaborador 1](https://github.com/usuario1): Rol o contribución específica.
+
 
 ## Licencia
 Este proyecto está bajo la Licencia MIT.
