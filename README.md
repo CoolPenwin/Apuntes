@@ -44,9 +44,9 @@ Si deseas contribuir a este repositorio, por favor sigue las siguientes pautas:
 si te 
 
 ### Colaboradores
-- [Davinia pd]([https://github.com/usuario1](https://github.com/daviniapd)): Davinia estuvo aqui.
-- [Nombre del Colaborador 1](https://github.com/usuario1): Rol o contribución específica.
+- [Davinia pd](https://github.com/daviniapd): Davinia estuvo aqui.
+- [Nombre del Colaborador 1](https://github.com/eliasjr89): Rol o contribución específica.
 
-
+https://github.com/eliasjr89
 ## Licencia
 Este proyecto está bajo la Licencia MIT.
