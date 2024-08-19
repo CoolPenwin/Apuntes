@@ -20,15 +20,15 @@ Etiquetas de formulario:
 
     <form>: 
         Definicion de un formulario.    // etiqueta Principal con contenido desplegado
-
+                [...]
         <input>: Campo de entrada.      // etiqueta con contenido desplegado
                 Texto (text): Permite al usuario ingresar texto.     
                 Contraseña (password): Permite al usuario ingresar una contraseña, ocultando los caracteres.
                 [...] 
         </input> 
-        <label>:[...]                  // etiqueta contraida 
+        <label>:  [...]                 // etiqueta contraida 
         </label>
-        <button>:[...]                 // etiqueta contraida 
+        <button>: [...]                 // etiqueta contraida 
         </button>
 
       </form>
