@@ -41,12 +41,16 @@ Si deseas contribuir a este repositorio, por favor sigue las siguientes pautas:
 4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
 
-si te 
+Si solo quieres añadir algo de contenido (se puede hacer directamente desde GitHub):
+1. Haz un fork del proyecto.
+2. Realiza tus cambios y haz commit 
+3. Abre un Pull Request.
 
 ### Colaboradores
 - [Davinia pd](https://github.com/daviniapd): Davinia estuvo aqui.
 - [Nombre del Colaborador 1](https://github.com/eliasjr89): Rol o contribución específica.
 
-https://github.com/eliasjr89
+
+
 ## Licencia
 Este proyecto está bajo la Licencia MIT.
