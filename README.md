@@ -10,12 +10,14 @@ Apuntes de programación generados a partir de lo aprendido durante mi paso por 
 4. [Licencia](#licencia)
 
 ## Instalación
-No se requiere instalación especial. Simplemente clona el repositorio y navega por los archivos para encontrar los apuntes que necesitas.
+No se requiere instalación especial. Simplemente clona el repositorio en local dale estrellita y navega por los archivos para encontrar los apuntes que necesitas.
 
 ## Uso
 Para utilizar estos apuntes, sigue la estructura de etiquetas HTML cambiando la palabra clave por el grupo  para encontrar y cerrar etiquetas correctamente. Aquí tienes un ejemplo de cómo están organizados los elementos principales y subgrupos:
 
 ### Ejemplo de Estructura de Etiquetas de Formulario
+Estas etiquetas nos sirven para cerrar el contenido  y navegar comodamente
+
 Etiquetas de formulario:
 
     <form>: 
