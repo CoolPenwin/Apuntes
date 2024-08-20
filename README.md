@@ -33,6 +33,8 @@ Etiquetas de formulario:
 
       </form>
 
+![Preview](RSC/vista%20cierre%20deberes.gif)
+
 ## Contribución
 Si deseas contribuir a este repositorio, por favor sigue las siguientes pautas:
 1. Haz un fork del proyecto.
