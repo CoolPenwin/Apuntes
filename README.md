@@ -46,7 +46,7 @@ Si solo quieres añadir algo de contenido (se puede hacer directamente desde Git
 2. Realiza tus cambios y haz commit 
 3. Abre un Pull Request.
 
-### Colaboradores
+### Contribuciones
 - [Davinia pd](https://github.com/daviniapd): Davinia estuvo aquí.
 - [Ruubia](https://github.com/Ruubia): Bea estuvo aquí.
 - [Nombre del Colaborador 1](https://github.com/eliasjr89): Rol o contribución específica.
