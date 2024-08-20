@@ -34,7 +34,10 @@ Etiquetas de formulario:
 
       </form>
 
+
 Estas etiquetas nos sirven para cerrar el contenido  y navegar comodamente
+
+
 ![Preview](RSC/vista_prrevia-uso_cierre_Etiquetas.gif)
 
 ## Contribución
