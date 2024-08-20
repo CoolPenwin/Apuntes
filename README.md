@@ -33,7 +33,7 @@ Etiquetas de formulario:
 
       </form>
 
-![Preview](RSC/vista%20cierre%20deberes.gif)
+![Preview](RSC/vista_prrevia-uso_cierre_Etiquetas.gif)
 
 ## Contribución
 Si deseas contribuir a este repositorio, por favor sigue las siguientes pautas:
