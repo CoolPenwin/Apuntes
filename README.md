@@ -16,7 +16,6 @@ No se requiere instalación especial. Simplemente clona el repositorio en local 
 Para utilizar estos apuntes, sigue la estructura de etiquetas HTML cambiando la palabra clave por el grupo  para encontrar y cerrar etiquetas correctamente. Aquí tienes un ejemplo de cómo están organizados los elementos principales y subgrupos:
 
 ### Ejemplo de Estructura de Etiquetas de Formulario
-Estas etiquetas nos sirven para cerrar el contenido  y navegar comodamente
 
 Etiquetas de formulario:
 
@@ -35,6 +34,7 @@ Etiquetas de formulario:
 
       </form>
 
+Estas etiquetas nos sirven para cerrar el contenido  y navegar comodamente
 ![Preview](RSC/vista_prrevia-uso_cierre_Etiquetas.gif)
 
 ## Contribución
