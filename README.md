@@ -47,7 +47,8 @@ Si solo quieres añadir algo de contenido (se puede hacer directamente desde Git
 3. Abre un Pull Request.
 
 ### Colaboradores
-- [Davinia pd](https://github.com/daviniapd): Davinia estuvo aqui.
+- [Davinia pd](https://github.com/daviniapd): Davinia estuvo aquí.
+- [Ruubia](https://github.com/Ruubia): Bea estuvo aquí.
 - [Nombre del Colaborador 1](https://github.com/eliasjr89): Rol o contribución específica.
 
 
