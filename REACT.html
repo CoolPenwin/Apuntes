@@ -1,5 +1,5 @@
 
-1ºIMPORTAR REACT
+1º IMPORTAR REACT
         solo una vez por proyecto
 
 2º CREAR COMPONENTE
@@ -378,3 +378,79 @@
                         });
                         }
 </API>
+
+
+<Promesas>
+        ¿Qué es una Promesa?
+                Una promesa es un objeto que representa la eventual finalización (o falla) de una operación asíncrona y su valor resultante. 
+                Es una forma de manejar operaciones que no se completan de inmediato, como solicitudes a una API, temporizadores, o cualquier otra tarea que tome tiempo.
+        
+        Estados de una Promesa
+                Una promesa puede estar en uno de tres estados:
+        
+                        Pendiente (Pending): La operación asíncrona aún no ha terminado.
+                        Cumplida (Fulfilled): La operación asíncrona se completó con éxito.
+                        Rechazada (Rejected): La operación asíncrona falló.
+
+        Sintaxis Básica
+                Aquí tienes un ejemplo básico de cómo se crea y maneja una promesa en JavaScript:
+        
+                        let promesa = new Promise((resolve, reject) => {
+                        // Simulamos una operación asíncrona con setTimeout
+                        setTimeout(() => {
+                                let exito = true; // Cambia esto a false para simular un error
+                                if (exito) {
+                                    resolve("¡Operación exitosa!");
+                                } else {
+                                    reject("Hubo un error.");
+                                }
+                                }, 2000);
+                        });
+                        
+                        promesa
+                        .then((mensaje) => {
+                                console.log(mensaje); // "¡Operación exitosa!"
+                        })
+                        .catch((error) => {
+                                console.error(error); // "Hubo un error."
+                        });
+
+
+        Promesas en React
+                En React, las promesas se utilizan comúnmente para manejar operaciones asíncronas como la obtención de datos de una API. 
+                Por ejemplo, podrías usar fetch para obtener datos y luego actualizar el estado del componente con los datos recibidos.
+                
+                Aquí tienes un ejemplo de cómo podrías usar una promesa en un componente funcional de React con useEffect y useState:
+        
+                        import React, { useState, useEffect } from 'react';
+                        
+                        function MiComponente() {
+                                const [datos, setDatos] = useState(null);
+                                const [error, setError] = useState(null);
+                        
+                                useEffect(() => {
+                                        fetch('https://api.example.com/datos')
+                                        .then(response => response.json())
+                                        .then(data => setDatos(data))
+                                        .catch(error => setError(error));
+                                }, []);
+                                
+                                if (error) {
+                                        return <div>Error: {error.message}</div>;
+                                }
+                                
+                                if (!datos) {
+                                        return <div>Cargando...</div>;
+                                }
+                                
+                                return (
+                                <div>
+                                        <h1>Datos:</h1>
+                                        <pre>{JSON.stringify(datos, null, 2)}</pre>
+                                </div>
+                                );
+                        }
+                        
+                        export default MiComponente;
+        
+</Promesas>
