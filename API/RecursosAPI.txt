@@ -1,0 +1,112 @@
+<APIs>
+    <documentacion>
+        
+        https://geekflare.com/es/api-documentation-tools/
+
+        https://www.postman.com/api-documentation-tool/
+
+       
+
+    </documentacion>
+
+    <APIs-list>
+
+        GATITITOS
+            https://thecatapi.com/
+
+
+        4Geeks
+            https://playground.4geeks.com/
+
+            ToDo.list
+                https://playground.4geeks.com/todo/docs
+
+            Contact.list
+                https://playground.4geeks.com/contact/docs
+
+            Sound
+                https://playground.4geeks.com/sound/docs
+
+
+
+        Apis Para pruebas
+
+            Pruebas de JSON
+                https://jsonplaceholder.typicode.com/
+
+            Pruebas front usuarios random
+                https://randomuser.me/
+
+
+
+
+        Recursos-de-Recursos
+
+            40 APIs útiles para diseñadores y desarrolladores web
+                sitios mas usados como Google twiter mapas.....
+                https://www.xn--apaados-6za.es/146-40-apis-utiles-para-disenadores-y-desarrolladores-web
+
+                
+            10 APIs gratuitas que todo desarrollador debería conocer
+                https://sergiofrancodev.com/recursos/10-apis-gratuitas-que-todo-desarrollador-deberia-conocer/
+            
+            GATITOS
+                https://thecatapi.com/
+            
+            Portal API
+                https://portal.thatapicompany.com/
+            
+
+        Friki APIs
+
+            Rick&Morty
+                https://rickandmortyapi.com/
+                https://javascript.rickandmortyapi.com/
+                https://therickandmortyapi.vercel.app/docs/introduction
+
+            StarWars
+                https://swapi.dev/
+                https://swapi.tech/
+                https://swapi.info/
+            
+            Marvel
+                https://developer.marvel.com/
+
+            GATITOS
+                https://thecatapi.com/
+            
+            Lord of The Rings
+                https://lotrapi.co/
+                https://the-one-api.dev/  proximamente
+            
+            Chuck Norris
+                https://api.chucknorris.io/
+
+            Pokemon
+                https://pokeapi.co/
+                https://staging.pokeapi.co/
+                https://pokeapi.co/
+
+        ANIMALICOS
+
+        GATITOS
+                https://thecatapi.com/
+
+            Pulgosos
+                https://www.thedogapi.com/
+
+        OTROS
+            CIA
+
+
+            GATITOS
+                https://thecatapi.com/
+
+            NASA
+                https://api.nasa.gov/
+
+            Random user generador
+                https://randomuser.me/
+
+    </APIs-list>
+</APIs
