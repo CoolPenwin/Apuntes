@@ -1,0 +1,285 @@
+<comparativa_conJS>
+    JavaScript --- Pyton
+
+    bajo typado --- typado alto 
+    camelCase --- sanke_case
+    
+    true --- True
+
+    
+    console.log("hello world") --- print (hello world)
+
+        ejecutar archivo  en consola
+    $ node nombrearchivo.js ---- $  pyton nombrearchivo.py 
+
+    [Array] --- [Lista *modificable] (Tupla *constante)
+
+    diccionario dentro de Lista
+    people_list = [{"name":'Leo'},{"name":'Olga'},{"name":'Luis'}]
+    
+</comparativa_conJS>
+CAST
+para modificar tipo  
+
+<introduccion>
+    <descripcion>
+        Python es un lenguaje de programación de alto nivel, interpretado y de propósito general. Fue creado por Guido van Rossum y lanzado por primera vez en 1991. Python es conocido por su sintaxis clara y legible, lo que lo hace ideal para principiantes y para el desarrollo rápido de aplicaciones.
+    </descripcion>
+    <caracteristicas>
+        <descripcion>
+            Algunas características clave de Python incluyen:
+        </descripcion>
+        <lista>
+            <item>Interpreted: Python es un lenguaje interpretado, lo que significa que el código se ejecuta línea por línea.</item>
+            <item>High-level: Python es un lenguaje de alto nivel, lo que significa que abstrae muchos detalles del hardware del ordenador.</item>
+            <item>Dynamic Typing: Python utiliza tipado dinámico, lo que significa que no es necesario declarar el tipo de una variable.</item>
+            <item>Extensive Libraries: Python tiene una amplia colección de bibliotecas estándar y de terceros.</item>
+        </lista>
+    </caracteristicas>
+</introduccion>
+
+<variables>
+    <definicion>
+        <descripcion>
+            Las variables en Python se utilizan para almacenar datos. No es necesario declarar el tipo de variable, ya que Python lo infiere automáticamente.
+        </descripcion>
+        <ejemplo>
+            x = 5
+            y = "Hola, Mundo!"
+        </ejemplo>
+    </definicion>
+    
+    <tiposDeDatos>
+        <descripcion>
+            Python soporta varios tipos de datos básicos como enteros, flotantes, cadenas de texto, listas, tuplas, diccionarios, etc.
+        </descripcion>
+        <ejemplo>
+            entero = 10
+            flotante = 10.5
+            cadena = "Python"
+            lista = [1, 2, 3]
+            tupla = (1, 2, 3)
+            diccionario = {"clave": "valor"}
+        </ejemplo>
+    </tiposDeDatos>
+</variables>
+
+<estructurasDeControl>
+    <condicionales>
+        <descripcion>
+            Las estructuras condicionales permiten ejecutar diferentes bloques de código en función de ciertas condiciones.
+        </descripcion>
+        <ejemplo>
+            if x > 0:
+                print("x es positivo")
+            elif x == 0:
+                print("x es cero")
+            else:
+                print("x es negativo")
+        </ejemplo>
+    </condicionales>
+    
+    <bucles>
+        <descripcion>
+            Los bucles permiten ejecutar un bloque de código repetidamente. Python soporta bucles `for` y `while`.
+        </descripcion>
+        <ejemplo>
+            for i in range(5):
+                print(i)
+            
+            while x > 0:
+                print(x)
+                x -= 1
+        </ejemplo>
+    </bucles>
+</estructurasDeControl>
+
+<funciones>
+    <definicion>
+        <descripcion>
+            Las funciones en Python se definen utilizando la palabra clave `def` seguida del nombre de la función y paréntesis.
+        </descripcion>
+        <ejemplo>
+            def saludar(nombre):
+                print(f"Hola, {nombre}!")
+        </ejemplo>
+    </definicion>
+    
+    <llamada>
+        <descripcion>
+            Para llamar a una función, simplemente se utiliza su nombre seguido de paréntesis.
+        </descripcion>
+        <ejemplo>
+            saludar("Mundo")
+        </ejemplo>
+    </llamada>
+</funciones>
+
+
+<modulosYPaquetes>
+    <modulos>
+        <descripcion>
+            Un módulo en Python es un archivo que contiene definiciones y sentencias de Python. Los módulos permiten organizar el código en partes reutilizables.
+        </descripcion>
+        <ejemplo>
+            # modulo.py
+            def saludar():
+                print("Hola desde el módulo")
+            
+            # main.py
+            import modulo
+            modulo.saludar()
+        </ejemplo>
+    </modulos>
+    
+    <paquetes>
+        <descripcion>
+            Un paquete es una forma de estructurar los módulos de Python en jerarquías de directorios. Un paquete es simplemente un directorio que contiene un archivo `__init__.py`.
+        </descripcion>
+        <ejemplo>
+            # Estructura de directorios
+            # paquete/
+            #     __init__.py
+            #     modulo1.py
+            #     modulo2.py
+            
+            # __init__.py
+            from .modulo1 import *
+            from .modulo2 import *
+        </ejemplo>
+    </paquetes>
+</modulosYPaquetes>
+
+<manejoDeExcepciones>
+    <descripcion>
+        El manejo de excepciones en Python se realiza utilizando las sentencias `try`, `except`, `else` y `finally`. Esto permite manejar errores de manera controlada.
+    </descripcion>
+    <ejemplo>
+        try:
+            x = 1 / 0
+        except ZeroDivisionError:
+            print("No se puede dividir por cero")
+        else:
+            print("La división fue exitosa")
+        finally:
+            print("Esto se ejecuta siempre")
+    </ejemplo>
+</manejoDeExcepciones>
+
+<castingYTiposDeDatos>
+    <casting>
+        <descripcion>
+            El casting en Python se refiere a la conversión de un tipo de dato a otro. Esto es útil cuando necesitas realizar operaciones entre diferentes tipos de datos.
+        </descripcion>
+        <ejemplo>
+            # Convertir entero a flotante
+            x = 5
+            y = float(x)  # y ahora es 5.0
+            
+            # Convertir flotante a entero
+            z = 10.7
+            w = int(z)  # w ahora es 10
+            
+            # Convertir cadena a entero
+            cadena = "123"
+            numero = int(cadena)  # numero ahora es 123
+            
+            # Convertir entero a cadena
+            numero = 456
+            cadena = str(numero)  # cadena ahora es "456"
+        </ejemplo>
+    </casting>
+    
+    <tiposDeDatos>
+        <descripcion>
+            Python soporta varios tipos de datos básicos como enteros, flotantes, cadenas de texto, listas, tuplas, diccionarios, etc.
+        </descripcion>
+        <ejemplo>
+            entero = 10
+            flotante = 10.5
+            cadena = "Python"
+            lista = [1, 2, 3]
+            tupla = (1, 2, 3)
+            diccionario = {"clave": "valor"}
+        </ejemplo>
+    </tiposDeDatos>
+</castingYTiposDeDatos>
+
+
+
+    <variables>
+        <definicion>
+            <descripcion>
+                Las variables en Python se utilizan para almacenar datos. No es necesario declarar el tipo de variable, ya que Python lo infiere automáticamente.
+            </descripcion>
+            <ejemplo>
+                x = 5
+                y = "Hola, Mundo!"
+            </ejemplo>
+        </definicion>
+        
+        <tiposDeDatos>
+            <descripcion>
+                Python soporta varios tipos de datos básicos como enteros, flotantes, cadenas de texto, listas, tuplas, diccionarios, etc.
+            </descripcion>
+            <ejemplo>
+                entero = 10
+                flotante = 10.5
+                cadena = "Python"
+                lista = [1, 2, 3]
+                tupla = (1, 2, 3)
+                diccionario = {"clave": "valor"}
+            </ejemplo>
+        </tiposDeDatos>
+    </variables>
+
+    <estructurasDeControl>
+        <condicionales>
+            <descripcion>
+                Las estructuras condicionales permiten ejecutar diferentes bloques de código en función de ciertas condiciones.
+            </descripcion>
+            <ejemplo>
+                if x > 0:
+                    print("x es positivo")
+                elif x == 0:
+                    print("x es cero")
+                else:
+                    print("x es negativo")
+            </ejemplo>
+        </condicionales>
+        
+        <bucles>
+            <descripcion>
+                Los bucles permiten ejecutar un bloque de código repetidamente. Python soporta bucles `for` y `while`.
+            </descripcion>
+            <ejemplo>
+                for i in range(5):
+                    print(i)
+                
+                while x > 0:
+                    print(x)
+                    x -= 1
+            </ejemplo>
+        </bucles>
+    </estructurasDeControl>
+
+<funciones>
+    <definicion>
+        <descripcion>
+            Las funciones en Python se definen utilizando la palabra clave `def` seguida del nombre de la función y paréntesis.
+        </descripcion>
+        <ejemplo>
+            def saludar(nombre):
+                print(f"Hola, {nombre}!")
+        </ejemplo>
+    </definicion>
+    
+    <llamada>
+        <descripcion>
+            Para llamar a una función, simplemente se utiliza su nombre seguido de paréntesis.
+        </descripcion>
+        <ejemplo>
+            saludar("Mundo")
+        </ejemplo>
+    </llamada>
+</funciones>

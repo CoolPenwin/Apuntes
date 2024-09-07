@@ -1,18 +1,286 @@
 
-1º IMPORTAR REACT
-        solo una vez por proyecto
+Concepto 1: Introducción a React
+<introduccion>
+    <descripcion>
+        React es una biblioteca de JavaScript para construir interfaces de usuario, especialmente para aplicaciones de una sola página. 
+        Fue desarrollada por Facebook y lanzada en 2013. 
+        React permite crear componentes reutilizables que gestionan su propio estado.
+    </descripcion>
+    <caracteristicas>
+        <descripcion>
+            Algunas características clave de React incluyen:
+        </descripcion>
+        <lista>
+            <item>Component-Based: React se basa en componentes, lo que permite construir interfaces de usuario complejas a partir de piezas pequeñas y aisladas.</item>
+            <item>Declarative: React permite describir cómo debería verse la interfaz de usuario en un estado dado, y se encarga de actualizarla cuando el estado cambia.</item>
+            <item>Virtual DOM: React utiliza un DOM virtual para mejorar el rendimiento al minimizar las manipulaciones directas del DOM real.</item>
+            <item>Unidirectional Data Flow: React sigue un flujo de datos unidireccional, lo que facilita la gestión del estado y la depuración.</item>
+        </lista>
+    </caracteristicas>
+</introduccion>
+Concepto 2: Componentes
+<componentes>
+    <definicion>
+        <descripcion>
+            Los componentes son las piezas fundamentales de una aplicación React. Pueden ser clases o funciones que devuelven elementos de React.
+        </descripcion>
+        <ejemplo>
+            // Componente de clase
+            class MiComponente extends React.Component {
+                render() {
+                    return <h1>Hola, Mundo!</h1>;
+                }
+            }
+            
+            // Componente funcional
+            function MiComponente() {
+                return <h1>Hola, Mundo!</h1>;
+            }
+        </ejemplo>
+    </definicion>
+</componentes>
+Concepto 3: JSX
+<jsx>
+    <descripcion>
+        JSX es una extensión de sintaxis para JavaScript que permite escribir código similar a HTML dentro de JavaScript. JSX se compila en llamadas a `React.createElement`.
+    </descripcion>
+    <ejemplo>
+        const elemento = <h1>Hola, Mundo!</h1>;
+    </ejemplo>
+</jsx>
+Concepto 4: Props y Estado
+<propsYEstado>
+    <props>
+        <descripcion>
+            Las props (propiedades) son argumentos que se pasan a los componentes de React. Son inmutables y permiten pasar datos de un componente padre a un componente hijo.
+        </descripcion>
+        <ejemplo>
+            function Saludo(props) {
+                return <h1>Hola, {props.nombre}!</h1>;
+            }
+            
+            // Uso del componente Saludo
+            <Saludo nombre="Juan" />
+        </ejemplo>
+    </props>
+    
+    <estado>
+        <descripcion>
+            El estado es un objeto que representa la parte de los datos que puede cambiar en un componente. A diferencia de las props, el estado es mutable y se gestiona dentro del componente.
+        </descripcion>
+        <ejemplo>
+            class Contador extends React.Component {
+                constructor(props) {
+                    super(props);
+                    this.state = { contador: 0 };
+                }
+                
+                incrementar = () => {
+                    this.setState({ contador: this.state.contador + 1 });
+                }
+                
+                render() {
+                    return (
+                        <div>
+                            <p>Contador: {this.state.contador}</p>
+                            <button onClick={this.incrementar}>Incrementar</button>
+                        </div>
+                    );
+                }
+            }
+        </ejemplo>
+    </estado>
+</propsYEstado>
+Concepto 5: Ciclo de Vida de los Componentes
+<cicloDeVida>
+    <descripcion>
+        Los componentes de clase en React tienen métodos de ciclo de vida que permiten ejecutar código en diferentes etapas del ciclo de vida de un componente, 
+        como cuando se monta, se actualiza o se desmonta.
+    </descripcion>
+    <ejemplo>
+        class MiComponente extends React.Component {
+            componentDidMount() {
+                // Código que se ejecuta después de que el componente se monta
+            }
+            
+            componentDidUpdate(prevProps, prevState) {
+                // Código que se ejecuta después de que el componente se actualiza
+            }
+            
+            componentWillUnmount() {
+                // Código que se ejecuta justo antes de que el componente se desmonte
+            }
+            
+            render() {
+                return <h1>Hola, Mundo!</h1>;
+            }
+        }
+    </ejemplo>
+</cicloDeVida>
+Concepto 6: Hooks
+<hooks>
+        <descripcion>
+            Los hooks son una nueva adición en React 16.8 que permiten usar estado y otras características de React sin escribir una clase. 
+            Aquí tienes una lista de los hooks más comunes:
+        </descripcion>
+        <lista>
+            <item>
+                <nombre>useState</nombre>
+                <descripcion>Permite añadir estado a componentes funcionales.</descripcion>
+                <ejemplo>
+                    const [state, setState] = useState(initialState);
+                </ejemplo>
+            </item>
+            <item>
+                <nombre>useEffect</nombre>
+                <descripcion>Permite realizar efectos secundarios en componentes funcionales.</descripcion>
+                <ejemplo>
+                    useEffect(() => {
+                        // Código a ejecutar
+                        return () => {
+                            // Código de limpieza
+                        };
+                    }, [dependencies]);
+                </ejemplo>
+            </item>
+            <item>
+                <nombre>useContext</nombre>
+                <descripcion>Permite acceder al valor de un contexto.</descripcion>
+                <ejemplo>
+                    const value = useContext(MyContext);
+                </ejemplo>
+            </item>
+            <item>
+                <nombre>useReducer</nombre>
+                <descripcion>Una alternativa a `useState` para manejar estados más complejos.</descripcion>
+                <ejemplo>
+                    const [state, dispatch] = useReducer(reducer, initialState);
+                </ejemplo>
+            </item>
+            <item>
+                <nombre>useCallback</nombre>
+                <descripcion>Memoriza funciones para evitar recrearlas en cada renderizado.</descripcion>
+                <ejemplo>
+                    const memoizedCallback = useCallback(() => {
+                        // Código a memorizar
+                    }, [dependencies]);
+                </ejemplo>
+            </item>
+            <item>
+                <nombre>useMemo</nombre>
+                <descripcion>Memoriza valores calculados para evitar recalcularlos en cada renderizado.</descripcion>
+                <ejemplo>
+                    const memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);
+                </ejemplo>
+            </item>
+            <item>
+                <nombre>useRef</nombre>
+                <descripcion>Permite crear referencias mutables que persisten entre renderizados.</descripcion>
+                <ejemplo>
+                    const refContainer = useRef(initialValue);
+                </ejemplo>
+            </item>
+            <item>
+                <nombre>useImperativeHandle</nombre>
+                <descripcion>Personaliza la instancia de un ref expuesto a componentes padres.</descripcion>
+                <ejemplo>
+                    useImperativeHandle(ref, () => ({
+                        // Métodos expuestos
+                    }), [dependencies]);
+                </ejemplo>
+            </item>
+            <item>
+                <nombre>useLayoutEffect</nombre>
+                <descripcion>Similar a `useEffect`, pero se ejecuta de manera sincrónica después de todas las mutaciones del DOM.</descripcion>
+                <ejemplo>
+                    useLayoutEffect(() => {
+                        // Código a ejecutar
+                    }, [dependencies]);
+                </ejemplo>
+            </item>
+            <item>
+                <nombre>useDebugValue</nombre>
+                <descripcion>Muestra una etiqueta en las herramientas de desarrollo de React para facilitar la depuración.</descripcion>
+                <ejemplo>
+                    useDebugValue(value);
+                </ejemplo>
+            </item>
+        </lista>
+    </hooks>
+Concepto 7: Manejo de Eventos
+<manejoDeEventos>
+    <descripcion>
+        React maneja eventos de manera similar a como se manejan en el DOM, pero con algunas diferencias sintácticas. 
+        Los eventos en React se nombran usando camelCase y se pasan como funciones.
+    </descripcion>
+    <ejemplo>
+        function Boton() {
+            function manejarClick() {
+                alert('Botón clickeado');
+            }
+            
+            return (
+                <button onClick={manejarClick}>Haz clic aquí</button>
+            );
+        }
+    </ejemplo>
+</manejoDeEventos>
 
-2º CREAR COMPONENTE
-        se crearan muchos mas 
 
-3º EXPORTAR COMPONENTE  para que sea accesible
-        se exportan cada uno de los componentes
+<flux>
+        <descripcion>
+            Flux es un patrón de arquitectura para manejar el flujo de datos en aplicaciones de React. Fue introducido por Facebook y se basa en un flujo de datos unidireccional.
+        </descripcion>
+        <componentes>
+            <lista>
+                <item>
+                    <nombre>Dispatcher</nombre>
+                    <descripcion>El Dispatcher es un centro de distribución que envía las acciones a los stores.</descripcion>
+                </item>
+                <item>
+                    <nombre>Stores</nombre>
+                    <descripcion>Los Stores contienen el estado y la lógica de la aplicación. Escuchan las acciones del Dispatcher y actualizan su estado en consecuencia.</descripcion>
+                </item>
+                <item>
+                    <nombre>Actions</nombre>
+                    <descripcion>Las Actions son objetos que contienen información sobre una acción que se ha realizado, como un evento del usuario.</descripcion>
+                </item>
+                <item>
+                    <nombre>Views</nombre>
+                    <descripcion>Las Views son componentes de React que escuchan los cambios en los Stores y se vuelven a renderizar en consecuencia.</descripcion>
+                </item>
+            </lista>
+        </componentes>
+    </flux>
 
-4º IMPORTAR COMPONENTE DESEADO EN EL "ARCHIVO FINAL"
-        por ejemplo se monta la pagina en index  y se importan todos los componentes deseados 
 
-5º USAR COMPONENTE 
-        esto solo por que lo dijo el profe 
+
+    <context>
+        <descripcion>
+            El Contexto de React proporciona una forma de pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel.
+        </descripcion>
+        <ejemplo>
+            // Creación de un Contexto
+            const MiContexto = React.createContext(valorInicial);
+            
+            // Proveedor de Contexto
+            function ProveedorDeContexto({ children }) {
+                const [valor, setValor] = useState(valorInicial);
+                
+                return (
+                    <MiContexto.Provider value={valor}>
+                        {children}
+                    </MiContexto.Provider>
+                );
+            }
+            
+            // Consumidor de Contexto
+            function ConsumidorDeContexto() {
+                const valor = useContext(MiContexto);
+                return <div>{valor}</div>;
+            }
+        </ejemplo>
+    </context>
 
 
 <estructura-de-componente>

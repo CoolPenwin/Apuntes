@@ -1,3 +1,205 @@
+Concepto 1: Introducción a JavaScript
+<introduccion>
+    <descripcion>
+        JavaScript es un lenguaje de programación de alto nivel, interpretado y de propósito general. 
+        Fue creado por Brendan Eich y lanzado por primera vez en 1995. 
+        JavaScript es conocido por su uso en el desarrollo web, permitiendo la creación de páginas web interactivas.
+    </descripcion>
+    <caracteristicas>
+        <descripcion>
+            Algunas características clave de JavaScript incluyen:
+        </descripcion>
+        <lista>
+            <item>Interpreted: JavaScript es un lenguaje interpretado, lo que significa que el código se ejecuta línea por línea.</item>
+            <item>High-level: JavaScript es un lenguaje de alto nivel, lo que significa que abstrae muchos detalles del hardware del ordenador.</item>
+            <item>Dynamic Typing: JavaScript utiliza tipado dinámico, lo que significa que no es necesario declarar el tipo de una variable.</item>
+            <item>Event-driven: JavaScript es un lenguaje orientado a eventos, lo que permite manejar eventos como clics de ratón y entradas de teclado.</item>
+        </lista>
+    </caracteristicas>
+</introduccion>
+Concepto 2: Variables y Tipos de Datos
+<variables>
+    <definicion>
+        <descripcion>
+            Las variables en JavaScript se utilizan para almacenar datos. No es necesario declarar el tipo de variable, ya que JavaScript lo infiere automáticamente.
+        </descripcion>
+        <ejemplo>
+            let x = 5;
+            let y = "Hola, Mundo!";
+        </ejemplo>
+    </definicion>
+    
+    <tiposDeDatos>
+        <descripcion>
+            JavaScript soporta varios tipos de datos básicos como enteros, flotantes, cadenas de texto, arrays, objetos, etc.
+        </descripcion>
+        <ejemplo>
+            let entero = 10;
+            let flotante = 10.5;
+            let cadena = "JavaScript";
+            let array = [1, 2, 3];
+            let objeto = { clave: "valor" };
+        </ejemplo>
+    </tiposDeDatos>
+</variables>
+Concepto 3: Estructuras de Control
+<estructurasDeControl>
+    <condicionales>
+        <descripcion>
+            Las estructuras condicionales permiten ejecutar diferentes bloques de código en función de ciertas condiciones.
+        </descripcion>
+        <ejemplo>
+            if (x > 0) {
+                console.log("x es positivo");
+            } else if (x === 0) {
+                console.log("x es cero");
+            } else {
+                console.log("x es negativo");
+            }
+        </ejemplo>
+    </condicionales>
+    
+    <bucles>
+        <descripcion>
+            Los bucles permiten ejecutar un bloque de código repetidamente. JavaScript soporta bucles `for`, `while` y `do...while`.
+        </descripcion>
+        <ejemplo>
+            for (let i = 0; i < 5; i++) {
+                console.log(i);
+            }
+            
+            while (x > 0) {
+                console.log(x);
+                x--;
+            }
+            
+            do {
+                console.log(x);
+                x--;
+            } while (x > 0);
+        </ejemplo>
+    </bucles>
+</estructurasDeControl>
+Concepto 4: Funciones
+<funciones>
+    <definicion>
+        <descripcion>
+            Las funciones en JavaScript se definen utilizando la palabra clave `function` seguida del nombre de la función y paréntesis.
+        </descripcion>
+        <ejemplo>
+            function saludar(nombre) {
+                console.log(`Hola, ${nombre}!`);
+            }
+        </ejemplo>
+    </definicion>
+    
+    <llamada>
+        <descripcion>
+            Para llamar a una función, simplemente se utiliza su nombre seguido de paréntesis.
+        </descripcion>
+        <ejemplo>
+            saludar("Mundo");
+        </ejemplo>
+    </llamada>
+</funciones>
+Concepto 5: Objetos y Clases
+<objetosYClases>
+    <objetos>
+        <descripcion>
+            Un objeto en JavaScript es una colección de propiedades, y una propiedad es una asociación entre un nombre (o clave) y un valor.
+        </descripcion>
+        <ejemplo>
+            let persona = {
+                nombre: "Juan",
+                edad: 30,
+                saludar: function() {
+                    console.log("Hola, soy " + this.nombre);
+                }
+            };
+            persona.saludar();
+        </ejemplo>
+    </objetos>
+    
+    <clases>
+        <descripcion>
+            Las clases en JavaScript son una forma de crear objetos utilizando una sintaxis basada en clases.
+        </descripcion>
+        <ejemplo>
+            class Persona {
+                constructor(nombre, edad) {
+                    this.nombre = nombre;
+                    this.edad = edad;
+                }
+                
+                saludar() {
+                    console.log(`Hola, soy ${this.nombre}`);
+                }
+            }
+            
+            let juan = new Persona("Juan", 30);
+            juan.saludar();
+        </ejemplo>
+    </clases>
+</objetosYClases>
+Concepto 6: Manejo de Excepciones
+<manejoDeExcepciones>
+    <descripcion>
+        El manejo de excepciones en JavaScript se realiza utilizando las sentencias `try`, `catch`, `finally`. 
+        Esto permite manejar errores de manera controlada.
+    </descripcion>
+    <ejemplo>
+        try {
+            let x = 1 / 0;
+        } catch (error) {
+            console.log("No se puede dividir por cero");
+        } finally {
+            console.log("Esto se ejecuta siempre");
+        }
+    </ejemplo>
+</manejoDeExcepciones>
+Concepto 7: Casting y Tipos de Datos
+<castingYTiposDeDatos>
+    <casting>
+        <descripcion>
+            El casting en JavaScript se refiere a la conversión de un tipo de dato a otro. 
+            Esto es útil cuando necesitas realizar operaciones entre diferentes tipos de datos.
+        </descripcion>
+        <ejemplo>
+            // Convertir entero a cadena
+            let numero = 123;
+            let cadena = String(numero);  // cadena ahora es "123"
+            
+            // Convertir cadena a entero
+            let cadena = "456";
+            let numero = Number(cadena);  // numero ahora es 456
+            
+            // Convertir booleano a cadena
+            let booleano = true;
+            let cadena = String(booleano);  // cadena ahora es "true"
+        </ejemplo>
+    </casting>
+    
+    <tiposDeDatos>
+        <descripcion>
+            JavaScript soporta varios tipos de datos básicos como enteros, flotantes, cadenas de texto, arrays, objetos, etc.
+        </descripcion>
+        <ejemplo>
+            let entero = 10;
+            let flotante = 10.5;
+            let cadena = "JavaScript";
+            let array = [1, 2, 3];
+            let objeto = { clave: "valor" };
+        </ejemplo>
+    </tiposDeDatos>
+</castingYTiposDeDatos>
+
+
+
+
+            [REORGANIZAR ]
+
+
+
 Variables y tipos de datos:
 <TIPOS_VARIABLE>
 
