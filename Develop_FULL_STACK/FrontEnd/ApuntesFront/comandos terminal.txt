@@ -9,6 +9,11 @@ PRO
         curl parrot.live
 ------------------------
 
+AMPLIAR CONOCIMIENTROS
+https://terminaldelinux.com/terminal/
+https://terminaldelinux.com/terminal/ficheros/espacio-libre-usado-disco/
+------------------------
+
 donde estoy? 
         pwd
 

@@ -4,6 +4,15 @@
 index.html
     es el archivo que se encuentra por defecto en una web 
 
+--------------------------------
+
+    AMPLIAR CONOCIMIENTROS
+    https://lenguajehtml.com/html/
+    https://lenguajejs.com/dom/
+
+        https://lenguajejs.com/fundamentos/
+
+--------------------------------
 
 Estructura Básica
     <!DOCTYPE html>: Define el tipo de documento y la versión de HTML.
