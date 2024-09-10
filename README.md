@@ -57,6 +57,7 @@ Si solo quieres añadir algo de contenido (se puede hacer directamente desde Git
 - [Ruubia](https://github.com/Ruubia): Bea estuvo aquí.
 - [Yara](https://github.com/Yaralisa): Estuve aquí Yara.
 - [Jumpvzl](https://github.com/Jumpvzl): Jumpvzl estuvo aquí.
+- [Edo](https://github.com/EduardoHernandezGuzman): Edo estuvo aquí.
 - [Nombre del Colaborador 1](https://github.com/eliasjr89): Rol o contribución específica.
 
 

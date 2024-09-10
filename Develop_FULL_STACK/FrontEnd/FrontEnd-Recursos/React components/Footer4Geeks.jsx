@@ -41,6 +41,7 @@ export const Footer = () => (
 //    ---CSS---
 
 //   /* footer */
+
 //   .logo {
 //     cursor: pointer;
 //     transition: 0.2s;
