@@ -53,11 +53,11 @@ Si solo quieres añadir algo de contenido (se puede hacer directamente desde Git
 3. Abre un Pull Request.
 
 ### Contribuciones
-- [Davinia pd](https://github.com/daviniapd): Davinia estuvo aquí.
-- [Ruubia](https://github.com/Ruubia): Bea estuvo aquí.
-- [Yara](https://github.com/Yaralisa): Estuve aquí Yara.
-- [Jumpvzl](https://github.com/Jumpvzl): Jumpvzl estuvo aquí.
-- [Edo](https://github.com/EduardoHernandezGuzman): Edo estuvo aquí.
+- [Davinia](https://github.com/daviniapd) estuvo aquí.
+- [Bea](https://github.com/Ruubia) estuvo aquí.
+- Estuve aquí [Yara](https://github.com/Yaralisa).
+- [Jumpvzl](https://github.com/Jumpvzl) estuvo aquí.
+- [Edo](https://github.com/EduardoHernandezGuzman) estuvo aquí.
 - [Nombre del Colaborador 1](https://github.com/eliasjr89): Rol o contribución específica.
 
 
