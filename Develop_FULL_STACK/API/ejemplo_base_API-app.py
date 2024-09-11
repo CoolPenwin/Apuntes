@@ -1,7 +1,7 @@
 ### INSTRUCCIONES CREAR API DESDE 0  ###
 
 ## instalar python
-##   pip install python(?)
+##   pipenv install --python 3
 
 ## instalar flask
 ##   pip install flask
