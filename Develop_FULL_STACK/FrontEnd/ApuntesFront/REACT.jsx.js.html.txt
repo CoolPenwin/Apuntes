@@ -1,7 +1,9 @@
 
 Concepto 1: Introducción a React
-Aprende React Desde Cero-ejemplos con publicidad fee code camp
+Aprende React Desde Cero-ejemplos
         https://www.youtube.com/watch?v=6Jfk8ic3KVk
+
+        https://www.youtube.com/watch?v=yIr_1CasXkM
 
 <introduccion>
     
