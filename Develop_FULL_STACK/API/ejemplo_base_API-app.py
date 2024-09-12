@@ -31,7 +31,7 @@ def prueba():
 @app.route("/alumnos" , methods=["GET"])
 def traer_alumnos():
     # Devolvemos un mensaje y la lista de alumnos en formato JSON
-    return jsonify({"msg" : "Estos son los alumnos del curso" , "listado": alumnos}
+    return jsonify({"msg" : "Estos son los alumnos del curso" , "listado": alumnos})
 
 
 
@@ -49,6 +49,10 @@ if __name__ == "__main__":
 ##  python3 app.py
 
 ## esto genera una direccion tipo 123.0.0.1:5000 <---puerto asignado en linea 42
+
+## cada ver que vuelves a iniciar el server 
+## en Puertos hay que asignar el puerto en publico
+
 ## esta direccion la usaremos en POSTMAN y la pagina que hemos asignado en @app.route linea 23
 ##     [GET] 
 ##          123.0.0.1:5000/prueba
