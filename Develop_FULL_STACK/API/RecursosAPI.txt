@@ -1,11 +1,13 @@
 <APIs>
     <documentacion>
         
+    clientes de testeo
         https://geekflare.com/es/api-documentation-tools/
 
         https://www.postman.com/api-documentation-tool/
 
-       
+        extension de VScode
+        Thunder Client
 
     </documentacion>
 
