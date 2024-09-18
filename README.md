@@ -52,6 +52,7 @@ Si solo quieres añadir algo de contenido (se puede hacer directamente desde Git
 2. Realiza tus cambios y haz commit 
 3. Abre un Pull Request.
 
+
 ### Contribuciones
 - [Davinia](https://github.com/daviniapd) estuvo aquí.
 - [Bea](https://github.com/Ruubia) estuvo aquí.
@@ -60,6 +61,9 @@ Si solo quieres añadir algo de contenido (se puede hacer directamente desde Git
 - [Edo](https://github.com/EduardoHernandezGuzman) estuvo aquí.
 - [Nombre del Colaborador 1](https://github.com/eliasjr89): Rol o contribución específica.
 
+`git commit -m "mensaje_de_commit" -m "Co-authored-by: gitHub.username <tu-mail@example.com>"`
+ejemplo
+`git commit -m "add recursos a links" -m "Co-authored-by: CoolPenwin <coolPenwin@proton.me>"`
 
 
 ## Licencia
