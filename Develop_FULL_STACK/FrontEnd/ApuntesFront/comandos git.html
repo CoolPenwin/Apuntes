@@ -196,131 +196,131 @@ curl parrot.live
     </Deshacer-commit>
 
 
-git branch
-    Función: Lista, crea o elimina ramas    
-    Caso de Uso: Para trabajar en diferentes características o versiones del proyecto sin afectar la rama principal.
+    git branch
+        Función: Lista, crea o elimina ramas    
+        Caso de Uso: Para trabajar en diferentes características o versiones del proyecto sin afectar la rama principal.
 
-git checkout <rama>
-    Función: Cambia a una rama diferente.
-    Caso de Uso: Para cambiar el contexto de trabajo a una rama específica.
-git checkout -b <Nueva-rama>
-    Función: Crea bueva rama y te mueve a esa rama
+    git checkout <rama>
+        Función: Cambia a una rama diferente.
+        Caso de Uso: Para cambiar el contexto de trabajo a una rama específica.
+    git checkout -b <Nueva-rama>
+        Función: Crea bueva rama y te mueve a esa rama
 
-git merge <rama>
-    Función: Fusiona una rama con la rama actual.
-    Caso de Uso: Para integrar cambios de una rama de desarrollo a la rama principal.
+    git merge <rama>
+        Función: Fusiona una rama con la rama actual.
+        Caso de Uso: Para integrar cambios de una rama de desarrollo a la rama principal.
 
-    git rebase <rama>
-        Función: Reaplica commits de una rama sobre otra.
-    Caso de Uso: Para mantener un historial de commits más limpio y lineal.
+        git rebase <rama>
+            Función: Reaplica commits de una rama sobre otra.
+        Caso de Uso: Para mantener un historial de commits más limpio y lineal.
 
-git stash
+    git stash
+        Definición: Este comando se utiliza para guardar temporalmente los cambios no confirmados en el directorio de trabajo y el índice de staging.
+        Caso de uso: Si estás trabajando en una característica y necesitas cambiar rápidamente a otra rama sin hacer un commit, 
+        usarías git stash para guardar tus cambios y git stash pop [...] para recuperarlos más tarde.
+    git stash pop 
+    [...] para recuperarlos más tarde.
+
+    git log
+        Función: Muestra el historial de commits.
+        Caso de Uso: Para revisar el historial de cambios y mensajes de commit.
+        
+
+    git remote
+        Definición: Este comando se utiliza para gestionar las conexiones a repositorios remotos. Permite ver, añadir, modificar o eliminar repositorios remotos.
+        Caso de uso: Si tienes un repositorio local y quieres conectarlo a un repositorio en GitHub, usarías git remote add origin <URL-del-repositorio> para establecer esa conexión.
+
+    git tag
+        Definición: Este comando se utiliza para crear etiquetas en puntos específicos del historial de commits. Las etiquetas son útiles para marcar versiones importantes del proyecto.
+        Caso de uso: Si has alcanzado una versión estable de tu proyecto y quieres marcar ese punto en el historial, usarías git tag v1.0 para crear una etiqueta llamada v1.0.
+
+    git reset:
+        Definición: Este comando se utiliza para deshacer cambios en el repositorio. Puede modificar el índice de staging y el historial de commits.
+        Caso de uso: Si has hecho un commit por error y quieres deshacerlo, podrías usar git reset --hard HEAD~1 para volver al estado del repositorio antes del último commit.
+
+
+    git revert
+        Definición: Este comando se utiliza para crear un nuevo commit que deshace los cambios de un commit anterior. A diferencia de git reset, no modifica el historial de commits.
+        Caso de uso: Si has introducido un bug en un commit y quieres deshacer esos cambios sin alterar el historial, usarías git revert <commit-id> para crear un nuevo commit que revierta los cambios del commit especificado.
+
+    git cherry-pick
+        Definición: Este comando se utiliza para aplicar los cambios introducidos en commits específicos de una rama a otra.
+        Caso de uso: Si has hecho un commit en una rama de desarrollo y quieres aplicar esos mismos cambios a la rama principal, usarías git cherry-pick <commit-id> para copiar esos cambios a la rama principal.
+
+            git blame
+    git blame <archivo>
+        Definición: Este comando muestra información sobre quién hizo cambios específicos en cada línea de un archivo.
+        Caso de uso: Si encuentras un bug en una línea de código y quieres saber quién la modificó por última vez, usarías git blame <archivo> para ver esa información.
+
+    git bisect
+        Definición: Este comando se utiliza para realizar una búsqueda binaria en el historial de commits para encontrar el commit que introdujo un bug.
+        Caso de uso: Si sabes que un bug fue introducido en algún punto del historial, pero no sabes exactamente cuándo, usarías git bisect start, git bisect good <commit-id> y git bisect bad <commit-id> para identificar el commit problemático.
+
+    git archive
+    Definición: Este comando se utiliza para crear un archivo comprimido (tarball o zip) de una versión específica del proyecto.
+        Caso de uso: Si quieres compartir una versión específica de tu proyecto sin incluir el historial de Git, usarías git archive --format=zip HEAD > proyecto.zip para crear un archivo comprimido de la versión actual.
+
+
+    git stash
     Definición: Este comando se utiliza para guardar temporalmente los cambios no confirmados en el directorio de trabajo y el índice de staging.
-    Caso de uso: Si estás trabajando en una característica y necesitas cambiar rápidamente a otra rama sin hacer un commit, 
-    usarías git stash para guardar tus cambios y git stash pop [...] para recuperarlos más tarde.
-git stash pop 
-[...] para recuperarlos más tarde.
+    Caso de uso: Si estás trabajando en una característica y necesitas cambiar rápidamente a otra rama sin hacer un commit, usarías git stash para guardar tus cambios y git stash pop para recuperarlos más tarde.
 
-git log
-    Función: Muestra el historial de commits.
-    Caso de Uso: Para revisar el historial de cambios y mensajes de commit.
-    
+    git fetch
+        Definición: Este comando se utiliza para descargar commits, archivos y referencias de un repositorio remoto a tu repositorio local.
+        Caso de uso: Si quieres actualizar tu repositorio local con los cambios más recientes del repositorio remoto sin fusionarlos automáticamente, usarías git fetch.
 
-git remote
-    Definición: Este comando se utiliza para gestionar las conexiones a repositorios remotos. Permite ver, añadir, modificar o eliminar repositorios remotos.
-    Caso de uso: Si tienes un repositorio local y quieres conectarlo a un repositorio en GitHub, usarías git remote add origin <URL-del-repositorio> para establecer esa conexión.
-
-git tag
-    Definición: Este comando se utiliza para crear etiquetas en puntos específicos del historial de commits. Las etiquetas son útiles para marcar versiones importantes del proyecto.
-    Caso de uso: Si has alcanzado una versión estable de tu proyecto y quieres marcar ese punto en el historial, usarías git tag v1.0 para crear una etiqueta llamada v1.0.
-
-git reset:
-    Definición: Este comando se utiliza para deshacer cambios en el repositorio. Puede modificar el índice de staging y el historial de commits.
-    Caso de uso: Si has hecho un commit por error y quieres deshacerlo, podrías usar git reset --hard HEAD~1 para volver al estado del repositorio antes del último commit.
+    git clean
+    Definición: Este comando se utiliza para eliminar archivos no rastreados del directorio de trabajo.
+    Caso de uso: Si tienes archivos generados que no están en el control de versiones y quieres limpiarlos, usarías git clean -f para forzar la eliminación de esos archivos.
 
 
-git revert
-    Definición: Este comando se utiliza para crear un nuevo commit que deshace los cambios de un commit anterior. A diferencia de git reset, no modifica el historial de commits.
-    Caso de uso: Si has introducido un bug en un commit y quieres deshacer esos cambios sin alterar el historial, usarías git revert <commit-id> para crear un nuevo commit que revierta los cambios del commit especificado.
+    git show
+        Definición: Este comando muestra información sobre un objeto de Git, como un commit, una etiqueta, etc.
+        Caso de uso: Si quieres ver los detalles de un commit específico, usarías git show <commit-id>.
+            
+    git config
+        Definición: Este comando se utiliza para configurar opciones de Git a nivel global o de repositorio.
+        Caso de uso: Si quieres configurar tu nombre de usuario y correo electrónico para todos tus repositorios, usarías git config --global user.name "Tu Nombre" y git config --global user.email "tuemail@example.com".
 
-git cherry-pick
-    Definición: Este comando se utiliza para aplicar los cambios introducidos en commits específicos de una rama a otra.
-    Caso de uso: Si has hecho un commit en una rama de desarrollo y quieres aplicar esos mismos cambios a la rama principal, usarías git cherry-pick <commit-id> para copiar esos cambios a la rama principal.
+    git rm
+        Definición: Este comando se utiliza para eliminar archivos del índice de staging y del directorio de trabajo.
+        Caso de uso: Si quieres eliminar un archivo del control de versiones y del directorio de trabajo, usarías git rm <archivo>.
+            
+            git mv
+        Definición: Este comando se utiliza para mover o renombrar archivos.
+        Caso de uso: Si quieres renombrar un archivo en tu proyecto, usarías git mv <archivo-viejo> <archivo-nuevo>.
 
-        git blame
-git blame <archivo>
-    Definición: Este comando muestra información sobre quién hizo cambios específicos en cada línea de un archivo.
-    Caso de uso: Si encuentras un bug en una línea de código y quieres saber quién la modificó por última vez, usarías git blame <archivo> para ver esa información.
+    git shortlog
+    Definición: Este comando muestra un resumen de los commits agrupados por autor.
+        Caso de uso: Si quieres ver un resumen de los commits realizados por cada autor, usarías git shortlog.
 
-git bisect
-    Definición: Este comando se utiliza para realizar una búsqueda binaria en el historial de commits para encontrar el commit que introdujo un bug.
-    Caso de uso: Si sabes que un bug fue introducido en algún punto del historial, pero no sabes exactamente cuándo, usarías git bisect start, git bisect good <commit-id> y git bisect bad <commit-id> para identificar el commit problemático.
+    git describe
+        Definición: Este comando muestra una descripción legible de un commit utilizando las etiquetas más cercanas.
+        Caso de uso: Si quieres obtener una descripción legible de un commit basado en las etiquetas más cercanas, usarías git describe.
 
-git archive
-Definición: Este comando se utiliza para crear un archivo comprimido (tarball o zip) de una versión específica del proyecto.
-    Caso de uso: Si quieres compartir una versión específica de tu proyecto sin incluir el historial de Git, usarías git archive --format=zip HEAD > proyecto.zip para crear un archivo comprimido de la versión actual.
+    git submodule
+        Definición: Este comando se utiliza para gestionar submódulos, que son repositorios dentro de otros repositorios.
+        Caso de uso: Si tu proyecto depende de otro proyecto y quieres incluirlo como submódulo, usarías git submodule add <url-del-repositorio>.
 
+    git reflog
+        Definición: Este comando muestra un registro de todos los movimientos de HEAD.
+        Caso de uso: Si quieres ver el historial de cambios de HEAD, usarías git reflog.
 
-git stash
-Definición: Este comando se utiliza para guardar temporalmente los cambios no confirmados en el directorio de trabajo y el índice de staging.
-Caso de uso: Si estás trabajando en una característica y necesitas cambiar rápidamente a otra rama sin hacer un commit, usarías git stash para guardar tus cambios y git stash pop para recuperarlos más tarde.
+    git gc
+        Definición: Este comando se utiliza para limpiar y optimizar el repositorio.
+        Caso de uso: Si quieres optimizar el tamaño de tu repositorio, usarías git gc.
 
-git fetch
-    Definición: Este comando se utiliza para descargar commits, archivos y referencias de un repositorio remoto a tu repositorio local.
-    Caso de uso: Si quieres actualizar tu repositorio local con los cambios más recientes del repositorio remoto sin fusionarlos automáticamente, usarías git fetch.
+    git fsck
+        Definición: Este comando verifica la integridad y validez de los objetos en el repositorio.
+        Caso de uso: Si quieres asegurarte de que tu repositorio no tiene errores, usarías git fsck.
 
-git clean
-Definición: Este comando se utiliza para eliminar archivos no rastreados del directorio de trabajo.
-Caso de uso: Si tienes archivos generados que no están en el control de versiones y quieres limpiarlos, usarías git clean -f para forzar la eliminación de esos archivos.
+    git notes
+    Definición: Este comando se utiliza para añadir notas a los objetos de Git.
+        Caso de uso: Si quieres añadir una nota a un commit sin modificar el mensaje del commit, usarías git notes add <commit-id>.
 
-
-git show
-    Definición: Este comando muestra información sobre un objeto de Git, como un commit, una etiqueta, etc.
-    Caso de uso: Si quieres ver los detalles de un commit específico, usarías git show <commit-id>.
-        
-git config
-    Definición: Este comando se utiliza para configurar opciones de Git a nivel global o de repositorio.
-    Caso de uso: Si quieres configurar tu nombre de usuario y correo electrónico para todos tus repositorios, usarías git config --global user.name "Tu Nombre" y git config --global user.email "tuemail@example.com".
-
-git rm
-    Definición: Este comando se utiliza para eliminar archivos del índice de staging y del directorio de trabajo.
-    Caso de uso: Si quieres eliminar un archivo del control de versiones y del directorio de trabajo, usarías git rm <archivo>.
-        
-        git mv
-    Definición: Este comando se utiliza para mover o renombrar archivos.
-    Caso de uso: Si quieres renombrar un archivo en tu proyecto, usarías git mv <archivo-viejo> <archivo-nuevo>.
-
-git shortlog
-Definición: Este comando muestra un resumen de los commits agrupados por autor.
-    Caso de uso: Si quieres ver un resumen de los commits realizados por cada autor, usarías git shortlog.
-
-git describe
-    Definición: Este comando muestra una descripción legible de un commit utilizando las etiquetas más cercanas.
-    Caso de uso: Si quieres obtener una descripción legible de un commit basado en las etiquetas más cercanas, usarías git describe.
-
-git submodule
-    Definición: Este comando se utiliza para gestionar submódulos, que son repositorios dentro de otros repositorios.
-    Caso de uso: Si tu proyecto depende de otro proyecto y quieres incluirlo como submódulo, usarías git submodule add <url-del-repositorio>.
-
-git reflog
-    Definición: Este comando muestra un registro de todos los movimientos de HEAD.
-    Caso de uso: Si quieres ver el historial de cambios de HEAD, usarías git reflog.
-
-git gc
-    Definición: Este comando se utiliza para limpiar y optimizar el repositorio.
-    Caso de uso: Si quieres optimizar el tamaño de tu repositorio, usarías git gc.
-
-git fsck
-    Definición: Este comando verifica la integridad y validez de los objetos en el repositorio.
-    Caso de uso: Si quieres asegurarte de que tu repositorio no tiene errores, usarías git fsck.
-
-git notes
-Definición: Este comando se utiliza para añadir notas a los objetos de Git.
-    Caso de uso: Si quieres añadir una nota a un commit sin modificar el mensaje del commit, usarías git notes add <commit-id>.
-
-git worktree
-    Definición: Este comando se utiliza para gestionar múltiples árboles de trabajo.
-    Caso de uso: Si quieres trabajar en múltiples ramas al mismo tiempo sin cambiar de directorio, usarías git worktree add <ruta> <rama>.
+    git worktree
+        Definición: Este comando se utiliza para gestionar múltiples árboles de trabajo.
+        Caso de uso: Si quieres trabajar en múltiples ramas al mismo tiempo sin cambiar de directorio, usarías git worktree add <ruta> <rama>.
 
 </Comandos-Avanzados>
 
@@ -333,39 +333,39 @@ git worktree
            [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
            [--config-env=<name>=<envvar>] <command> [<args>]
 
-These are common Git commands used in various situations:
+    These are common Git commands used in various situations:
 
-    start a working area (see also: git help tutorial)
-    clone     Clone a repository into a new directory
-    init      Create an empty Git repository or reinitialize an existing one
+        start a working area (see also: git help tutorial)
+        clone     Clone a repository into a new directory
+        init      Create an empty Git repository or reinitialize an existing one
 
-    work on the current change (see also: git help everyday)
-    add       Add file contents to the index
-    mv        Move or rename a file, a directory, or a symlink
-    restore   Restore working tree files
-    rm        Remove files from the working tree and from the index
+        work on the current change (see also: git help everyday)
+        add       Add file contents to the index
+        mv        Move or rename a file, a directory, or a symlink
+        restore   Restore working tree files
+        rm        Remove files from the working tree and from the index
 
-    examine the history and state (see also: git help revisions)
-    bisect    Use binary search to find the commit that introduced a bug
-    diff      Show changes between commits, commit and working tree, etc
-    grep      Print lines matching a pattern
-    log       Show commit logs
-    show      Show various types of objects
-    status    Show the working tree status
+        examine the history and state (see also: git help revisions)
+        bisect    Use binary search to find the commit that introduced a bug
+        diff      Show changes between commits, commit and working tree, etc
+        grep      Print lines matching a pattern
+        log       Show commit logs
+        show      Show various types of objects
+        status    Show the working tree status
 
-    grow, mark and tweak your common history
-    branch    List, create, or delete branches
-    commit    Record changes to the repository
-    merge     Join two or more development histories together
-    rebase    Reapply commits on top of another base tip
-    reset     Reset current HEAD to the specified state
-    switch    Switch branches
-    tag       Create, list, delete or verify a tag object signed with GPG
+        grow, mark and tweak your common history
+        branch    List, create, or delete branches
+        commit    Record changes to the repository
+        merge     Join two or more development histories together
+        rebase    Reapply commits on top of another base tip
+        reset     Reset current HEAD to the specified state
+        switch    Switch branches
+        tag       Create, list, delete or verify a tag object signed with GPG
 
-    collaborate (see also: git help workflows)
-    fetch     Download objects and refs from another repository
-    pull      Fetch from and integrate with another repository or a local branch
-    push      Update remote refs along with associated objects
+        collaborate (see also: git help workflows)
+        fetch     Download objects and refs from another repository
+        pull      Fetch from and integrate with another repository or a local branch
+        push      Update remote refs along with associated objects
     
 </Git-Help>
    
