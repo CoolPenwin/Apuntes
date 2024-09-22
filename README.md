@@ -61,7 +61,8 @@ Si solo quieres añadir algo de contenido (se puede hacer directamente desde Git
 - [Edo](https://github.com/EduardoHernandezGuzman) estuvo aquí.
 - [Nombre del Colaborador 1](https://github.com/eliasjr89): Rol o contribución específica.
 
-`git commit -m "mensaje_de_commit" -m "Co-authored-by: gitHub.username <tu-mail@example.com>"`
+`git commit -m "mensaje_de_commit" -m "Co-authored-by: Nombre_del_co-autor <tu-mail@example.com>"`
+el Mail es el requisito necesario , el Nombre_del_co-autor es 
 ejemplo
 `git commit -m "add recursos a links" -m "Co-authored-by: CoolPenwin <coolPenwin@proton.me>"`
 
