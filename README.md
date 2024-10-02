@@ -1,6 +1,6 @@
 # Apuntes de Programación
 ![Alt text](RSC/usar_lo_apuntes.gif)
-## Descripción
+## Descripción 
 Apuntes de programación generados a partir de lo aprendido durante mi paso por 4Geeks. Este repositorio incluye un manual de uso y una estructura clara para facilitar la búsqueda de información.
 
 ## Tabla de Contenidos
