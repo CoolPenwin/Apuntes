@@ -127,6 +127,24 @@ curl parrot.live
 
 </Comandos-Basicos>
 
+<dehacercommitsSubidos>
+   1 Deshacer el último commit localmente: Abre tu terminal y navega hasta el directorio de tu proyecto. Luego, ejecuta el siguiente comando:    
+    git reset --soft HEAD~1
+    Esto deshará el último commit, pero mantendrá los cambios en tu área de preparación (staging).
+
+        1.2 Deshacer varios commits localmente: Abre tu terminal y navega hasta el directorio de tu proyecto. Luego, ejecuta el siguiente comando, reemplazando N con el número de commits que deseas deshacer:
+        git reset --soft HEAD~N
+        Esto deshará los últimos N commits, pero mantendrá los cambios en tu área de preparación (staging).
+    
+   2 Hacer un nuevo commit (opcional): Si deseas realizar un nuevo commit con los cambios, puedes hacerlo con:    
+    git commit -m "Nuevo mensaje para el commit"
+    
+  3  Forzar el push a GitHub: Como ya habías subido el commit anterior, necesitarás forzar el push para que los cambios se reflejen en GitHub. Usa el siguiente comando:    
+    git push origin nombre-de-tu-rama --force
+    Asegúrate de reemplazar nombre-de-tu-rama con el nombre de la rama en la que estás trabajando.
+    
+</dehacercommitsSubidos>
+
 <Comandos-Avanzados>
 
     ----- Comandos Avanzados -----
